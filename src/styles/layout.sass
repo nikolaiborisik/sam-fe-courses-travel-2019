@@ -1,0 +1,67 @@
+$backColor: snow    //background color
+$header-top-height: 8em //высота top-header
+$header-nav-height: 2em
+$main-left-div-height: 5em //высота левых блоков
+$main-right-div-height: 10em
+$gallery-div-height: 10em 
+body
+    background: $backColor
+.header-container
+    text-align: center
+    border: red solid 1px
+.header-top
+    height: $header-top-height
+    border: blue solid 1px
+.header-nav
+    border: yellow solid 1px
+    height: $header-nav-height
+.main
+    display: flex
+    border: green 1px solid
+
+.main-left
+    border: red solid 1px
+    width: 30%
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    
+.main-right
+    border: blue solid 1px
+    width: 70%
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+.main-left
+    div
+        border: black solid 1px
+        width: 25em
+        text-align: center
+        height: $main-left-div-height
+.main-right
+    div
+        border: black solid 1px
+        width: 30em
+        text-align: center
+        height: $main-right-div-height
+.gallery
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    border: red solid 1px
+.gallery
+    div
+        border: blue solid 1px
+        width: 23em
+        height: $gallery-div-height
+        text-align: center
+.bottom
+    border: green solid 1px
+    height: 10em
+    text-align: center
+
+
+
+
+
+

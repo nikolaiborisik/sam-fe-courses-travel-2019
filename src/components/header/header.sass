@@ -1,22 +1,48 @@
-.header
-    background-color: $header-background-color
-    height: 400px
-    display: flex
-    align-items: center
-    justify-content: space-between
-    .info
-        .info__searchbar
+@import '../../styles/config.sass'
 
-        .info__logo
+// basic list styles
 
-        .info__subscribe-btn
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+        display: inline-block
 
-.navigation
-    background-color: $navigation-background-color
-    align-items: center
-    justify-content: space-between
-    .list
-        .list__element
-        
-    .navigation_socials-links
+//-----------------------------
+
+.header-container
+    max-width: $header-content-width
+    margin: 0 auto
+    border: 1px solid #000
+    .header-top
+        min-height: $header-top-height
+        background-color: $header-background-color
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .header-top__searchbar-label
+            background-color: snow
+            border-radius: 5px
+            .header-top__searchbar-input
+                border: none
+            .header-top__searchbar-btn
+        .header-top__logo
+        .header-top__subscribe-btn
+            border-radius: 2px
+            border: 1px solid #242929
+            opacity: 0.1
+            font-family: "Dosis-Bold"
+    .header-nav
+        min-height: $header-nav-height
+        padding: 0
+        background-color: $navigation-background-color
+        align-items: center
+        justify-content: space-between
+        border: 1px solid #000
+        .nav-list
+            .nav-list__element
+                
+        .nav-socials-links-list
+            .nav-socials-links-list__element
                 

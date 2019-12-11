@@ -1,0 +1,2 @@
+import './formArticle.sass'
+

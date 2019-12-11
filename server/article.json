@@ -1,5 +1,5 @@
 {
-  "article": [
+  "articles": [
     {
       "id": 1,
       "title": "Lorem ipsum dolor",
@@ -33,7 +33,7 @@
       "image": ""
     }
   ],
-  "category": [
+  "categories": [
     {
       "name": "nature"
     },
@@ -47,7 +47,7 @@
       "name": "food"
     }
   ],
-  "tag": [
+  "tags": [
     {
       "name": "nature"
     },

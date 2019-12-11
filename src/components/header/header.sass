@@ -1,6 +1,6 @@
 @import '../../styles/config.sass'
 
-// basic list styles
+// basic styles
 
 ul
     list-style: none
@@ -38,7 +38,8 @@ button
             border: 1px solid rgba(36, 41, 41, .1)
             padding: 15px 35px
             color: $default-btn-color
-            font-family: "Dosis - Semi Bold"
+            font-family: Dosis
+            font-weight: 600
             font-size: 14px
             text-transform: uppercase
             letter-spacing: 2.8px
@@ -59,13 +60,20 @@ button
                 letter-spacing: 1.6px
                 font-size: 16px
                 line-height: 30px
+                font-family: Montserrat
                 transition: .7s
-                font-weight: bold
+                font-weight: 600
                 &:last-child
                     padding-right: 0
                 &:hover
                     color: $active-btn-color
         .nav-socials-links-list
             .nav-socials-links-list__element
+                i
+                    font-size: 20px
+                    line-height: 30px
                 padding: 24px 0px 24px 24px
                 color: $default-btn-color
+                transition: .7s
+                &:hover
+                    color: $active-btn-color

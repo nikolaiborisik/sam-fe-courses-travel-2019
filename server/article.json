@@ -1,0 +1,93 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor",
+      "shortDescription": "Lorem ipsum dolor",
+      "createDate": "10.12.2019",
+      "content": "Lorem ipsum dolor",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor",
+      "short description": "Lorem ipsum dolor",
+      "create date": "10.12.2019",
+      "content": "Lorem ipsum dolor",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "Lorem ipsum dolor",
+      "short description": "Lorem ipsum dolor",
+      "create date": "10.12.2019",
+      "content": "Lorem ipsum dolor",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "title": "Lorem ipsum dolor",
+      "short description": "Lorem ipsum dolor",
+      "create date": "10.12.2019",
+      "content": "Lorem ipsum dolor",
+      "image": ""
+    },
+    {
+      "title": "test",
+      "shortDescription": "test",
+      "createDate": "11.12.2019",
+      "content": "test",
+      "image": "",
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "name": "nature"
+    },
+    {
+      "name": "nightlife"
+    },
+    {
+      "name": "lifestyle"
+    },
+    {
+      "name": "food"
+    }
+  ],
+  "tags": [
+    {
+      "name": "nature"
+    },
+    {
+      "name": "travel"
+    },
+    {
+      "name": "lifestyle"
+    },
+    {
+      "name": "lost"
+    },
+    {
+      "name": "trekking"
+    }
+  ],
+  "articleTags": [
+    {
+      "articleId": 1,
+      "tag": "nature"
+    },
+    {
+      "articleId": 2,
+      "tag": "nightlife"
+    },
+    {
+      "articleId": 3,
+      "tag": "nightlife"
+    },
+    {
+      "articleId": 4,
+      "tag": "nightlife"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -16,6 +17,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
+        new CopyWebpackPlugin([
+            {
+                from:'./src/static/images',
+                to:'./images'
+            } 
+        ]), 
     ],
     output: {
         filename: 'bundle.js',
@@ -26,7 +33,7 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
-                'file-loader',
+                    'file-loader',
                 ],
             },
             {

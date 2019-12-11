@@ -1,22 +1,79 @@
-.header
-    background-color: $header-background-color
-    height: 400px
-    display: flex
-    align-items: center
-    justify-content: space-between
-    .info
-        .info__searchbar
+@import '../../styles/config.sass'
 
-        .info__logo
+// basic styles
 
-        .info__subscribe-btn
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+        display: inline-block
 
-.navigation
-    background-color: $navigation-background-color
-    align-items: center
-    justify-content: space-between
-    .list
-        .list__element
-        
-    .navigation_socials-links
-                
+button
+    background-color: inherit
+    border: none
+    cursor: pointer
+
+//-----------------------------
+
+.header-container
+    max-width: $header-content-width
+    margin: 0 auto
+    .header-top
+        min-height: $header-top-height
+        background-color: $header-background-color
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .header-top__searchbar-label
+            border-radius: 5px
+            line-height: 1.5
+            .header-top__searchbar-input
+                border: none
+            .header-top__searchbar-btn
+                padding-left: 0
+        .header-top__logo
+        .header-top__subscribe-btn
+            border-radius: 2px
+            border: 1px solid rgba(36, 41, 41, .1)
+            padding: 15px 35px
+            color: $default-btn-color
+            font-family: Dosis
+            font-weight: 600
+            font-size: 14px
+            text-transform: uppercase
+            letter-spacing: 2.8px
+            transition: .7s
+            &:hover
+                background-color: rgba(36, 41, 41, .1)
+    .header-nav
+        min-height: $header-nav-height
+        background-color: $navigation-background-color
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .nav-list
+            .nav-list__element
+                padding: 24px 35px 24px 0
+                text-transform: uppercase
+                color: $default-btn-color
+                letter-spacing: 1.6px
+                font-size: 16px
+                line-height: 30px
+                font-family: Montserrat
+                transition: .7s
+                font-weight: 600
+                &:last-child
+                    padding-right: 0
+                &:hover
+                    color: $active-btn-color
+        .nav-socials-links-list
+            .nav-socials-links-list__element
+                i
+                    font-size: 20px
+                    line-height: 30px
+                padding: 24px 0px 24px 24px
+                color: $default-btn-color
+                transition: .7s
+                &:hover
+                    color: $active-btn-color

@@ -9,12 +9,16 @@ ul
     li
         display: inline-block
 
+button
+    background-color: inherit
+    border: none
+    cursor: pointer
+
 //-----------------------------
 
 .header-container
     max-width: $header-content-width
     margin: 0 auto
-    border: 1px solid #000
     .header-top
         min-height: $header-top-height
         background-color: $header-background-color
@@ -22,27 +26,46 @@ ul
         align-items: center
         justify-content: space-between
         .header-top__searchbar-label
-            background-color: snow
             border-radius: 5px
+            line-height: 1.5
             .header-top__searchbar-input
                 border: none
             .header-top__searchbar-btn
+                padding-left: 0
         .header-top__logo
         .header-top__subscribe-btn
             border-radius: 2px
-            border: 1px solid #242929
-            opacity: 0.1
-            font-family: "Dosis-Bold"
+            border: 1px solid rgba(36, 41, 41, .1)
+            padding: 15px 35px
+            color: $default-btn-color
+            font-family: "Dosis - Semi Bold"
+            font-size: 14px
+            text-transform: uppercase
+            letter-spacing: 2.8px
+            transition: .7s
+            &:hover
+                background-color: rgba(36, 41, 41, .1)
     .header-nav
         min-height: $header-nav-height
-        padding: 0
         background-color: $navigation-background-color
+        display: flex
         align-items: center
         justify-content: space-between
-        border: 1px solid #000
         .nav-list
             .nav-list__element
-                
+                padding: 24px 35px 24px 0
+                text-transform: uppercase
+                color: $default-btn-color
+                letter-spacing: 1.6px
+                font-size: 16px
+                line-height: 30px
+                transition: .7s
+                font-weight: bold
+                &:last-child
+                    padding-right: 0
+                &:hover
+                    color: $active-btn-color
         .nav-socials-links-list
             .nav-socials-links-list__element
-                
+                padding: 24px 0px 24px 24px
+                color: $default-btn-color

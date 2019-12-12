@@ -3,6 +3,6 @@ export interface ArticleModel {
     title: string
     shortDescription: string,
     createDate: string,
-    "content": string,
-    "image": string
+    content: string,
+    image: string
 }

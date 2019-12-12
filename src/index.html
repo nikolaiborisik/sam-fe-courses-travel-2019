@@ -41,11 +41,33 @@
     </header>
     <main class="main">
         <section class="main__aside">
-            <div class='card main__card'>MAP</div>
-            <div class='card main__card'>ABOUT ME</div>
-            <div class='card main__card'>NEWSLETTER</div>
-            <div class='card main__card'>CATEGORIES</div>
-            <div class='card main__card'>TAGS</div>
+            <div class='main-left-box left-div_shadow'>
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A325168d8cec11152ac3bded6312747bb05c2907ee3fff745726d243418d40156&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+            </div>
+            <div class='main-left-box'>ABOUT ME</div>
+            <div class='main-left-box'>NEWSLETTER</div>
+            <div class='main-left-box'>CATEGORIES</div>
+            <div class='main-left-box'>TAGS</div>
+            <div class="add-article left-div_shadow">
+                <form action="">
+                    <div class="allInputs">
+                        <div class="input-div">
+                            <input class="add-input" type="text" placeholder="Title">
+                        </div>
+                        <div class="input-div">
+                            <input class="add-input" type="text" placeholder="Short description">
+                        </div>
+                        <div class="input-div">
+                            <textarea class="add-input" rows="5"></textarea>
+                        </div>
+                        <div class="input-div">
+                            <input class="add-btn btn" type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
         <section class="main__articles">
             <div class="card card_horizontal card_right-image">
@@ -131,23 +153,6 @@
     <aside class="bottom">
         BOTTOM
     </aside>
-    <div class="add-article left-div_shadow">
-        <form action="">
-            <div class="allInputs">
-                <div class="input-div">
-                    <input class="add-input" type="text" placeholder="Title">
-                </div>
-                <div class="input-div">
-                    <input class="add-input" type="text" placeholder="Short description">
-                </div>
-                <div class="input-div">
-                    <textarea class="add-input" rows="5"></textarea>
-                </div>
-                <div class="input-div">
-                    <input class="add-btn btn" type="submit" value="Send">
-                </div>
-            </div>
-        </form>
-    </div>
+
 </body>
 </html>

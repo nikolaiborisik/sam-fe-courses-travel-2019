@@ -1,1 +1,1 @@
-const baseApiURL = "http://localhost:3001"
+const baseApiURL = "http://localhost:3001";

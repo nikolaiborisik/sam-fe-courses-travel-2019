@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,700&display=swap" rel="stylesheet">  
     <title>sam-fe-courses-travel-2019</title>
 </head>
 <body>
@@ -39,20 +40,80 @@
         </div>
     </header>
     <main class="main">
-        <div class="main-left">
-            <div class='main-left-box'>MAP</div>
+        <section class="main__aside">
+            <div class='card'>
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A325168d8cec11152ac3bded6312747bb05c2907ee3fff745726d243418d40156&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+            </div>
             <div class='main-left-box'>ABOUT ME</div>
             <div class='main-left-box'>NEWSLETTER</div>
             <div class='main-left-box'>CATEGORIES</div>
             <div class='main-left-box'>TAGS</div>
-        </div>
-        <div class="main-right">
-            <div class="main-right-box">art1</div>
-            <div class="main-right-box">art2</div>
-            <div class="main-right-box">art3</div>
-            <div class="main-right-box">art4</div>
-            <div class="main-right-box">art5</div>
-        </div>
+            <div class="add-article left-div_shadow">
+                <form action="">
+                    <div class="allInputs">
+                        <div class="input-div">
+                            <input class="add-input" type="text" placeholder="Title">
+                        </div>
+                        <div class="input-div">
+                            <input class="add-input" type="text" placeholder="Short description">
+                        </div>
+                        <div class="input-div">
+                            <textarea class="add-input" rows="5"></textarea>
+                        </div>
+                        <div class="input-div">
+                            <input class="add-btn btn" type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="main__articles">
+            <div class="card card_horizontal">
+                <div class="card__text-content">
+                    <span class="card__category">night life</span>
+                    <h2 class="card__header">Written in the stars, Million miles away!</h2>
+                    <div class="card__line"></div>
+                    <p class="card__short-description">A high degree of autonomy is particularly desirable in fields such as space exploration...</p>
+                    <div class="card__actions-block">
+                        <button class="btn btn_readmore-btn">Readmore</button>
+                        <div class="card__share-block">
+                            <button class="btn btn_share-btn">share</button>
+                            <ul class="card__socials-list">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card__image-block">
+                    <img src="./images/artilce-logo-1.png" alt="">
+                </div> -->
+            </div>
+            <div class="card">
+                <!-- <div class="card__image-block">
+                    <img src="./images/artilce-logo-1.png" alt="">
+                </div> -->
+                <div class="card__text-content">
+                    <span class="card__category">night life</span>
+                    <h2 class="card__header">Written in the stars, Million miles away!</h2>
+                    <p class="card__short-description">A high degree of autonomy is particularly desirable in fields such as space exploration...</p>
+                    <div class="card__actions-block">
+                        <button class="btn btn_readmore-btn">Readmore</button>
+                        <div class="card__share-block">
+                            <button class="btn btn_share-btn">share</button>
+                            <ul class="card__socials-list">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <section class="gallery">
         <div>IMG1</div>
@@ -67,23 +128,6 @@
     <aside class="bottom">
         BOTTOM
     </aside>
-    <div class="add-article left-div_shadow">
-        <form action="">
-            <div class="allInputs">
-                <div class="input-div">
-                    <input class="add-input" type="text" placeholder="Title">
-                </div>
-                <div class="input-div">
-                    <input class="add-input" type="text" placeholder="Short description">
-                </div>
-                <div class="input-div">
-                    <textarea class="add-input" rows="5"></textarea>
-                </div>
-                <div class="input-div">
-                    <input class="add-btn btn" type="submit" value="Send">
-                </div>
-            </div>
-        </form>
-    </div>
+
 </body>
 </html>

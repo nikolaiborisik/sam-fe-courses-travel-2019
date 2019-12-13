@@ -1,68 +1,92 @@
 @import '../../styles/config.sass'
     
 .main
-    padding: 5px
+    padding: 20px
 
+    .main-articles
+        display: flex
+        flex-direction: column
 
-.card_left-image
-    justify-content: end
+    .card__text-content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 30px
+        flex-basis: calc(100% - 600px)
+        min-width: 500px
 
-.card_right-image
-    justify-content: start
+    .card__category
+        display: inline-block
+        margin-bottom: 20px
+        color: $card-category-text-color
+        font-family: Montserrat
+        font-size: 20px
+        font-weight: 700
+        letter-spacing: 4px
+        text-transform: uppercase
 
-.card__text-content_limited
-    max-width: 600px
+    .card__header
+        color: $card-header-text-color
+        font-family: Poppins, 'Open Sans'
+        font-size: 30px
+        font-weight: 400
+        line-height: 50px
 
-.card__category
-    display: inline-block
-    margin-bottom: 30px
-    color: $card-category-text-color
-    font-family: Montserrat
-    font-size: 24px
-    font-weight: 700
-    letter-spacing: 4px
-    text-transform: uppercase
+    .card__actions-block
+        display: flex
+        justify-content: space-between
 
-.card__header
-    color: $card-header-text-color
-    font-family: Poppins, 'Open Sans'
-    font-size: 36px
-    font-weight: 400
-    line-height: 60px
+    .card__share-block
+        display: flex
+        align-items: center
 
-.card__actions-block
+    .card__socials-list
+        li
+            padding: 15px
+            font-size: 25px
+            color: $active-btn-color
+
+    .card__short-description
+        color: #6c7374
+        font-family: Raleway
+        font-size: 20px
+        font-weight: 400
+        line-height: 36px
+        margin-bottom: 30px
+    .card__image-block
+        flex-shrink: 0
+
+.card_horizontal
+    .card__image-block
+        flex-basis: 400px
+        img
+            box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
+            transform: scale(110%) translateX(-35px)
+
+.card_vertical
+    .card__image-block
+        img
+            width: 100%
+
+.pagination
     display: flex
     justify-content: space-between
+    margin-bottom: 30px
+    .pagination__btn
+        font-family: Raleway
+        color: $pagination-btn-color
+        background-color: $pagination-btn-background-color
+        &:hover
+            background-color: $pagination-btn-background-color-on-hover
+            color: $pagination-btn-color-on-hover
+    .pagination__list
+        .pagination__nav-btn
+            font-family: Raleway
+            padding: 15px 20px
+            border-radius: 50%
+            color: $pagination-nav-btn-color
+            background-color: $pagination-nav-btn-background-color
+            &:hover
+                color: $pagination-nav-btn-color-on-hover 
+                background-color: $pagination-nav-btn-background-color-on-hover
 
-.card__share-block
-    display: flex
-    align-items: center
-
-.card__socials-list
-    li
-        padding: 10px
-        font-size: 30px
-        color: $active-btn-color
-
-.card__short-description
-    color: #6c7374
-    font-family: Raleway
-    font-size: 24px
-    font-weight: 400
-    line-height: 36px
-    margin-bottom: 70px
-
-.card__image-block
-    img
-        box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-
-.card__image-block_out-of-border
-    position: absolute
-    top: -10%
-    height: 120%
-
-.card__image-block_right
-    right: 30px
-
-.card__image-block_left
-    left: 30px

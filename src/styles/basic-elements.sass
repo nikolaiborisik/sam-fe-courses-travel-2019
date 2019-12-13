@@ -1,48 +1,101 @@
+*
+  box-sizing: border-box
+  
 ul
     list-style: none
     margin: 0
     padding: 0
     li
         display: inline-block
-  
+
 img
-  max-height: 100%
+  display: block
+  max-width: 100%
+
+input
+  border: none
 
 .btn
-  padding: 10px 15px
+  padding: 7px 12px
   text-decoration: none
   border: none
   cursor: pointer
   font-family: Raleway
   font-size: 25px
-  font-weight: 700
-  line-height: 52.97px
   text-transform: uppercase
-  transition: .7s
+  background-color: $default-btn-background-color
+.btn_sm
+  padding: 7px 10px
+  font-size: 15px
+
+.btn_social-btn
+  letter-spacing: 1.6px
+  font-size: 20px
+  padding: 15px
+  font-family: Montserrat
   &:hover
-    background-color: #be9106
+      color: $navigation-btn-background-color-on-hover
+
+.btn_header-nav-btn
+    letter-spacing: 1.6px
+    font-size: 20px
+    padding: 30px 15px
+    font-family: Montserrat
+    &:hover
+        color: $navigation-btn-background-color-on-hover
+
 .btn_readmore-btn
-  background-color: $active-btn-color
+    background-color: $readmore-btn-background-color
+    &:hover
+        background-color: $readmore-btn-background-color-on-hover
+
+.btn_pagination-nav
+    font-family: Raleway
+    padding: 15px 20px
+    border-radius: 50%
+    color: $pagination-nav-btn-color
+    background-color: $pagination-nav-btn-background-color
+    &:hover
+        color: $pagination-nav-btn-color-on-hover 
+        background-color: $pagination-nav-btn-background-color-on-hover
+
+.btn_pagination-nav-arrow
+    font-family: Raleway
+    color: $pagination-btn-color
+    background-color: $pagination-btn-background-color
+    &:hover
+        background-color: $pagination-btn-background-color-on-hover
+        color: $pagination-btn-color-on-hover
+
 .btn_share-btn
-  padding: 10px 30px
-  color: $share-btn-color
-  background-color: $share-btn-background-color
+    height: 100%
+    color: $share-btn-color
+    background-color: $share-btn-background-color
+    &:hover
+        background-color: $share-btn-background-color-on-hover
+        color: $share-btn-color-on-hover
 
 .card
-  margin: 40px 0 60px
+  margin-bottom: 60px
   box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-  background-color: #ffffff
+  background-color: $card-background-color
+  position: relative
 
-// .card_horizontal
-//   display: flex
-//   justify-content: space-between
+.left-div_shadow
+  box-shadow: 4px 8px 13px #d0d0d0
+
+.bottom_shadow
+  box-shadow: 0px 8px 10px #d0d0d0
+
+.card_horizontal
+  display: flex
+  justify-content: space-between
 
 .card__line
   height: 3px
   opacity: .4
   background-color: $card-line-color
   margin: 15px 0
-
   
 .left-div_shadow
   box-shadow: 4px 8px 13px #d0d0d0

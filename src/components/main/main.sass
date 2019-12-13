@@ -3,10 +3,6 @@
 .main
     padding: 20px
 
-    .main-articles
-        display: flex
-        flex-direction: column
-
     .card__text-content
         display: flex
         flex-direction: column
@@ -56,6 +52,18 @@
     .card__image-block
         flex-shrink: 0
 
+    .btn_readmore-btn
+        background-color: $readmore-btn-background-color
+        &:hover
+            background-color: $readmore-btn-background-color-on-hover
+    .btn_share-btn
+        height: 100%
+        color: $share-btn-color
+        background-color: $share-btn-background-color
+        &:hover
+            background-color: $share-btn-background-color-on-hover
+            color: $share-btn-color-on-hover
+
 .card_horizontal
     .card__image-block
         flex-basis: 400px
@@ -69,6 +77,7 @@
             width: 100%
 
 .pagination
+    width: 100%
     display: flex
     justify-content: space-between
     margin-bottom: 30px

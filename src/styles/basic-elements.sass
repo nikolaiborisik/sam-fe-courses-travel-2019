@@ -6,36 +6,43 @@ ul
         display: inline-block
   
 img
-  max-height: 100%
+  display: block
+  max-width: 100%
 
 .btn
-  padding: 10px 15px
+  background-color: $default-btn-background-color
+  padding: 7px 15px
   text-decoration: none
   border: none
   cursor: pointer
   font-family: Raleway
   font-size: 25px
   font-weight: 700
-  line-height: 52.97px
   text-transform: uppercase
   transition: .7s
   &:hover
-    background-color: #be9106
+    background-color: $default-btn-background-color-on-hover
 .btn_readmore-btn
-  background-color: $active-btn-color
+  background-color: $readmore-btn-background-color
 .btn_share-btn
-  padding: 10px 30px
+  height: 100%
   color: $share-btn-color
   background-color: $share-btn-background-color
+  &:hover
+    background-color: $share-btn-background-color-on-hover
+    color: $share-btn-color-on-hover
+.btn_sm
+  padding: 7px 10px
+  font-size: 15px
 
 .card
   margin: 40px 0 60px
   box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-  background-color: #ffffff
+  background-color: $card-background-color
 
-// .card_horizontal
-//   display: flex
-//   justify-content: space-between
+.card_horizontal
+  display: flex
+  justify-content: space-between
 
 .card__line
   height: 3px

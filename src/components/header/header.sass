@@ -9,9 +9,13 @@
         display: flex
         align-items: center
         justify-content: space-between
+        padding: 0 20px
         .header-top__searchbar-label
             border-radius: 5px
-            padding: 10px
+            .header-top__searchbar-input
+                padding: 10px
+                border-top-left-radius: 5px
+                border-bottob-left-radius: 5px
         .header-top__subscribe-btn
             border-radius: 2px
             border: 1px solid $subscribe-btn-border-color
@@ -28,10 +32,38 @@
         display: flex
         align-items: center
         justify-content: space-between
+        position: relative
+        padding: 0 20px
         .nav-list, .nav-socials-links-list
             &:first-child
                 button
                     padding-left: 0
             &:last-child
                 button
-                    padding-right: 0 
+                    padding-right: 0
+        
+        .header-nav__toggle-main-menu-label, .header-nav__toggle-socials-links-label
+            display: none
+            padding: 10px
+            border-radius: 50%
+            i
+                color: $default-btn-color
+                font-size: 30px
+        .header-nav__toggle-main-menu-input
+            display: none
+            &:checked ~ .header-nav__toggle-main-menu-label
+                i
+                    color: $active-btn-color
+                    transform: rotate(90deg)
+            &:checked ~ .nav-list
+                display: block
+        .header-nav__toggle-socials-links-input
+            display: none
+            &:checked ~ .header-nav__toggle-socials-links-label
+                i
+                    color: $active-btn-color
+                    transform: rotate(90deg)
+            &:checked ~ .nav-socials-links-list
+                display: block
+
+@import './media.sass' 

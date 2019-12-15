@@ -1,0 +1,44 @@
+@media all and ( max-width: 1100px )
+    .header-top
+        flex-direction: column
+    .header-top__logo
+        order: -1
+        margin: 40px 0
+    .header-top__subscribe-btn
+        margin: 40px 0
+    .btn_header-nav-btn
+        padding: 15px
+    .nav-list
+        display: none
+        box-shadow: 0 24px 26px 3px $subscribe-btn-background-color-on-hover
+        position: absolute
+        width: 100%
+        top: 100%
+        left: 0
+        z-index: 9999
+        li
+            display: block
+            background-color: $header-background-color
+            &:hover
+                background-color: $default-btn-color-on-hover
+            button
+                width: 100%
+                padding: 40px
+    .nav-socials-links-list
+        display: none
+        box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
+        position: absolute
+        width: 100%
+        top: 100%
+        right: 0
+        z-index: 9999
+        li
+            display: block
+            background-color: $header-background-color
+            &:hover
+                background-color: $default-btn-color-on-hover
+            button
+                width: 100%
+                padding: 40px
+    .header-nav__toggle-main-menu-label, .header-nav__toggle-socials-links-label
+        display: block !important

@@ -1,12 +1,5 @@
 *
   box-sizing: border-box
-  
-ul
-    list-style: none
-    margin: 0
-    padding: 0
-    li
-        display: inline-block
 
 img
   display: block
@@ -26,11 +19,12 @@ input
   font-size: 25px
   text-transform: uppercase
   background-color: $default-btn-background-color
+  // transition: all .7s
 .btn_sm
   padding: 7px 10px
   font-size: 15px
 
-.btn_social-btn
+.social-btn
   letter-spacing: 1.6px
   font-size: 20px
   padding: 15px
@@ -38,52 +32,41 @@ input
   &:hover
       color: $navigation-btn-background-color-on-hover
 
-.btn_header-nav-btn
+.nav-btn
     letter-spacing: 1.6px
     font-size: 20px
-    padding: 30px 15px
+    padding: 15px
     font-family: Montserrat
     &:hover
         color: $navigation-btn-background-color-on-hover
 
-.btn_readmore-btn
-    background-color: $readmore-btn-background-color
-    &:hover
-        background-color: $readmore-btn-background-color-on-hover
-
-.btn_pagination-nav
-    font-family: Raleway
-    padding: 15px 20px
-    border-radius: 50%
-    color: $pagination-nav-btn-color
-    background-color: $pagination-nav-btn-background-color
-    &:hover
-        color: $pagination-nav-btn-color-on-hover 
-        background-color: $pagination-nav-btn-background-color-on-hover
-
-.btn_pagination-nav-arrow
-    font-family: Raleway
-    color: $pagination-btn-color
-    background-color: $pagination-btn-background-color
-    &:hover
-        background-color: $pagination-btn-background-color-on-hover
-        color: $pagination-btn-color-on-hover
-
-.btn_share-btn
-    height: 100%
-    color: $share-btn-color
-    background-color: $share-btn-background-color
-    &:hover
-        background-color: $share-btn-background-color-on-hover
-        color: $share-btn-color-on-hover
-
 // ------------------------------------------------------------------
 
+.list
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+        display: inline-block
+
+.nav-list
+    &:first-child
+        button
+            padding-left: 0
+    &:last-child
+          button
+              padding-right: 0
+
 .card
-  margin-bottom: 60px
-  box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-  background-color: $card-background-color
-  position: relative
+    margin-bottom: 40px
+    box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
+    background-color: $card-background-color
+    position: relative
+    .line
+        height: 3px
+        opacity: .4
+        background-color: $card-line-color
+        margin-bottom: 15px
 
 .left-div_shadow
   box-shadow: 4px 8px 13px #d0d0d0
@@ -94,12 +77,6 @@ input
 .card_horizontal
   display: flex
   justify-content: space-between
-
-.card__line
-  height: 3px
-  opacity: .4
-  background-color: $card-line-color
-  margin: 15px 0
   
 .left-div_shadow
   box-shadow: 4px 8px 13px #d0d0d0

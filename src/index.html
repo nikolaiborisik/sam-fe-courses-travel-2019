@@ -20,6 +20,9 @@
                 <img src="./images/logo.png" alt="Logo">
             </div>
             <button class="btn subscribe-btn" id="but">subscribe</button>
+
+            <button class="btn subscribe-btn" id="but">Загрузить статьи(subscribe)</button>
+
         </div>
         <div class="header-nav">
             <input class="toggle-main-menu-input" type='checkbox' id="toggle-main-menu-input">
@@ -104,16 +107,22 @@
                 <form action="">
                     <div class="all-inputs">
                         <div class="input-div">
-                            <input class="add-input" type="text" placeholder="Title">
+                            <input class="add-input article-title" type="text" placeholder="Title">
                         </div>
                         <div class="input-div">
-                            <input class="add-input" type="text" placeholder="Short description">
+                            <input class="add-input article-shortDescription" type="text" placeholder="Short description">
                         </div>
                         <div class="input-div">
-                            <textarea class="add-input" rows="7"></textarea>
+                            <textarea class="add-input article-content" rows="7"></textarea>
                         </div>
                         <div class="input-div">
-                            <input class=" btn add-btn btn_sm" type="submit" value="Send">
+                            <input class=" btn add-btn btn_sm" id="getArticle" type="button" value="Send">
+                        </div>
+                        <div class="input-div">
+                            <input class="add-input toDelete" type="text" placeholder="Enter the id of the item to be deleted">
+                        </div>
+                        <div class="input-div">
+                            <input class=" btn add-btn btn_sm" id="removeArticle" type="button" value="Remove">
                         </div>
                     </div>
                 </form>

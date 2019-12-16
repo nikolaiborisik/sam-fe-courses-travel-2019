@@ -1,3 +1,5 @@
+import { ArticleModel } from "./models/ArticleModel";
+
 const axios = require('axios');
 
 let getInfoButton = document.getElementById("but");
@@ -30,6 +32,36 @@ function UpdateInfo(data:any) {   //updates info on the page
 
 getInfoButton.addEventListener('click', GetInfo);
 
+const getArticleButton = document.querySelector('#getArticle');
+const removeArticleButton = document.querySelector('#removeArticle');
 
+const inputArticleTitle: any = document.querySelector('.article-title');
+const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
+const inputArticleContent: any = document.querySelector('.article-content');
 
+function postArticle(){
+  let newArticle: ArticleModel = {
+    title: inputArticleTitle.value,
+    shortDescription: inputArticleShortDescription.value,
+    content: inputArticleContent.value
+  };
+  axios.post("http://localhost:3000/articles", newArticle).then(function (response: any) {
+    inputArticleTitle.value = '';
+    inputArticleShortDescription.value = '';
+    inputArticleContent.value = '';
+  });
+}
+
+getArticleButton.addEventListener('click', postArticle);
+
+function removeArticle (){
+  const inputToDelete: any = document.querySelector('.toDelete');
+  let id: number = inputToDelete.value;
+  axios.delete('http://localhost:3000/articles/' + id).then(function (response: any){
+    inputToDelete.value = '';
+    console.log('deleted');
+  });
+}
+
+removeArticleButton.addEventListener('click', removeArticle);
 

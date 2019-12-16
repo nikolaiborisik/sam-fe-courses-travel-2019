@@ -2,58 +2,71 @@
     
 .main
     padding: 20px
+    .card
+        .text-content
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 25px
+            flex-basis: calc(100% - 350px)
 
-    .card__text-content
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        padding: 25px
-        flex-basis: calc(100% - 350px)
+        .category
+            display: inline-block
+            margin-bottom: 20px
+            color: $card-category-text-color
+            font-family: Montserrat
+            font-size: 18px
+            font-weight: 700
+            letter-spacing: 4px
+            text-transform: uppercase
 
-    .card__category
-        display: inline-block
-        margin-bottom: 15px
-        color: $card-category-text-color
-        font-family: Montserrat
-        font-size: 18px
-        font-weight: 700
-        letter-spacing: 4px
-        text-transform: uppercase
+        .header
+            color: $card-header-text-color
+            font-family: Poppins, 'Open Sans'
+            font-size: 35px
+            font-weight: 400
+            line-height: 30px
+            margin-bottom: 20px
 
-    .card__header
-        color: $card-header-text-color
-        font-family: Poppins, 'Open Sans'
-        font-size: 25px
-        font-weight: 400
-        line-height: 30px
+        .actions-block
+            display: flex
+            justify-content: space-between
 
-    .card__actions-block
-        display: flex
-        justify-content: space-between
+        .share-block
+            display: flex
+            align-items: center
 
-    .card__share-block
-        display: flex
-        align-items: center
+        .short-description
+            color: #6c7374
+            font-family: Raleway
+            font-size: 20px
+            font-weight: 400
+            line-height: 30px
+            margin-bottom: 15px
+        .image-block
+            flex-shrink: 0
 
-    .card__short-description
-        color: #6c7374
-        font-family: Raleway
-        font-size: 20px
-        font-weight: 400
-        line-height: 30px
-        margin-bottom: 15px
-    .card__image-block
-        flex-shrink: 0
+        .share-btn
+            height: 100%
+            color: $share-btn-color
+            background-color: $share-btn-background-color
+            &:hover
+                background-color: $share-btn-background-color-on-hover
+                color: $share-btn-color-on-hover
 
+        .readmore-btn
+            background-color: $readmore-btn-background-color
+            &:hover
+                background-color: $readmore-btn-background-color-on-hover
 .card_horizontal
-    .card__image-block
+    .image-block
         flex-basis: 300px
         img
             box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-            transform: scale(110%) translateX(-25px)
+            transform: scale(120%) translateX(-35px)
 
 .card_vertical
-    .card__image-block
+    .image-block
         img
             width: 100%
 
@@ -62,5 +75,21 @@
     display: flex
     justify-content: space-between
     margin-bottom: 30px
+    .nav-arrow-btn
+        font-family: Raleway
+        color: $pagination-btn-color
+        background-color: $pagination-btn-background-color
+        &:hover
+            background-color: $pagination-btn-background-color-on-hover
+            color: $pagination-btn-color-on-hover
+    .pagination-nav-btn
+        font-family: Raleway
+        padding: 15px 20px
+        border-radius: 50%
+        color: $pagination-nav-btn-color
+        background-color: $pagination-nav-btn-background-color
+        &:hover
+            color: $pagination-nav-btn-color-on-hover 
+            background-color: $pagination-nav-btn-background-color-on-hover
 
 @import './media.sass'

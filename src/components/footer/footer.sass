@@ -1,40 +1,84 @@
 @import '../../styles/config.sass'
 
-.connected
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
-    .connected__list
+.footer
+    .connected
         display: flex
-        flex-wrap: wrap
         justify-content: center
-        padding: 40px 0
-        button
-            padding: 30px
+        flex-wrap: wrap
+        .list
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            padding: 40px 0
 
-.back-to-top
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    position: relative
-    padding: 50px 0
-    background-color: $back-to-top-section-background-color
-    .footer-nav
+    .back-to-top
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
         position: relative
-        // padding: 0 20px
-        ul
-            &:first-child
-            // button
-                padding-left: 0
-            // &:last-child
-            //     button
-            //         padding-right: 0
-        
+        padding: 50px 0
+        background-color: $back-to-top-section-background-color
+        .toggle-nav-list-label
+            display: none
+            padding: 10px
+            i
+                color: $default-btn-color
+                font-size: 50px
+                transition: .7s
+        .toggle-nav-list-input
+            display: none
+            &:checked ~ .toggle-nav-list-label
+                i
+                    color: $active-btn-color
+                    transform: rotate(90deg)
+            &:checked ~ .nav-list
+                display: block
 
-.designed-by
-    padding: 50px 30px
-    p
-        text-align: right
-        font-size: 30px
-        font-family: Montserrat
+        .back-to-top-btn
+            position: absolute
+            bottom: -20px
+            background-color: $back-to-top-btn-background-color
+            padding: 20px 40px
+            color: $back-to-top-btn-color
+            &::after
+                position: absolute
+                bottom: 0
+                right: 0
+                width: 0
+                height: 0
+                border-style: solid
+                border-color: transparent transparent red transparent
+                border-width: 0 0 15px 15px
+                content: ''
+                transition: .7s
+            &::before
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 0
+                height: 0
+                border-style: solid
+                border-color: transparent transparent transparent red
+                border-width: 15px 0 0 15px
+                content: ''
+                transition: .7s
+            &:hover
+                background-color: $back-to-top-btn-background-color-on-hover
+                color: $back-to-top-btn-color-on-hover
+                &::after
+                border-color: transparent transparent $back-to-top-btn-color-on-hover transparent
+                &::before
+                border-color: transparent transparent transparent $back-to-top-btn-color-on-hover
+
+        .footer-nav-btn
+            padding: 40px 20px
+                
+    .designed-by
+        padding: 50px 30px
+        p
+            text-align: right
+            font-size: 30px
+            font-family: Montserrat
+
+@import './media.sass'

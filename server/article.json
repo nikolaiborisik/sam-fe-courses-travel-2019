@@ -2,6 +2,22 @@
   "articles": [
     {
       "id": 1,
+      "title": "Written in the stars, Million miles away!",
+      "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
+      "createDate": "10.12.2019",
+      "content": "Article1_content",
+      "image": "./images/article-logo-1.png"
+    },
+    {
+      "id": 2,
+      "title": "The Vermont Delegation Mourns the Sanders Campaign",
+      "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
+      "createDate": "10.12.2019",
+      "content": "Article2_content",
+      "image": "./images/article-logo-3.png"
+    },
+    {
+      "id": 3,
       "title": "Lorem ipsum dolor",
       "shortDescription": "Lorem ipsum dolor",
       "createDate": "10.12.2019",
@@ -9,36 +25,12 @@
       "image": ""
     },
     {
-      "id": 2,
-      "title": "Lorem ipsum dolor",
-      "short description": "Lorem ipsum dolor",
-      "create date": "10.12.2019",
-      "content": "Lorem ipsum dolor",
-      "image": ""
-    },
-    {
-      "id": 3,
-      "title": "Lorem ipsum dolor",
-      "short description": "Lorem ipsum dolor",
-      "create date": "10.12.2019",
-      "content": "Lorem ipsum dolor",
-      "image": ""
-    },
-    {
       "id": 4,
       "title": "Lorem ipsum dolor",
-      "short description": "Lorem ipsum dolor",
-      "create date": "10.12.2019",
+      "shortDescription": "Lorem ipsum dolor",
+      "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
       "image": ""
-    },
-    {
-      "title": "test",
-      "shortDescription": "test",
-      "createDate": "11.12.2019",
-      "content": "test",
-      "image": "",
-      "id": 5
     }
   ],
   "categories": [

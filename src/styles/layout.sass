@@ -2,12 +2,12 @@ body
     background: $backColor
 .main
     display: grid
-    grid-template-columns: 500px minmax(850px, 1fr)
+    grid-template-columns: 500px 1fr
     grid-template-areas: 'aside articles'
     grid-gap: 20px
-    .main__aside
+    .aside
         grid-area: aside
-    .main__articles
+    .articles
         grid-area: articles
 
 .gallery

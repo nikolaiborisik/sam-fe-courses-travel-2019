@@ -12,20 +12,20 @@
 <body>
     <header class="header-container">
         <div class="header-top">
-            <label class="header-top__searchbar-label">
-                <input type="text" class="header-top__searchbar-input" placeholder="Search and hit enter">
-                <button type='submit' class="btn btn_sm header-top__searchbar-btn"><i class="fas fa-search"></i></button>
+            <label class="searchbar-label">
+                <input type="text" class="searchbar-input" placeholder="Search and hit enter">
+                <button type='submit' class="btn btn_sm searchbar-btn"><i class="fas fa-search"></i></button>
             </label>
-            <div class="header-top__logo">
+            <div class="logo">
                 <img src="./images/logo.png" alt="Logo">
             </div>
-            <button class="btn header-top__subscribe-btn" id="but">subscribe</button>
+            <button class="btn subscribe-btn" id="but">subscribe</button>
         </div>
         <div class="header-nav">
-            <input class="header-nav__toggle-main-menu-input" type='checkbox' id="header-nav__toggle-main-menu-input">
-            <label class="header-nav__toggle-main-menu-label" for='header-nav__toggle-main-menu-input'><i class="fas fa-bars"></i></label>
-            <input class="header-nav__toggle-socials-links-input" type='checkbox' id="header-nav__socials-links-toggle-input">
-            <label class="header-nav__toggle-socials-links-label" for='header-nav__socials-links-toggle-input'><i class="fas fa-bars"></i></label>
+            <input class="toggle-main-menu-input" type='checkbox' id="toggle-main-menu-input">
+            <label class="toggle-main-menu-label" for='toggle-main-menu-input'><i class="fas fa-bars"></i></label>
+            <input class="toggle-socials-links-input" type='checkbox' id="socials-links-toggle-input">
+            <label class="toggle-socials-links-label" for='socials-links-toggle-input'><i class="fas fa-bars"></i></label>
             <ul class="list nav-list">
                 <li><button class="btn nav-btn">home</button></li>
                 <li><button class="btn nav-btn">featured</button></li>
@@ -44,7 +44,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="main__aside">
+        <section class="main-aside">
             <div class='main-left-box left-div_shadow map-box'>
                 <div class="aside-title">WHERE AM I</div>
                 <div class="map">
@@ -57,20 +57,20 @@
                     Hi! I'm a Travellerr  based on Assam
                     I love editing photos, clicking photos, creating responsive websites alongwith high quality graphics.
                 </div>
-                <p>FOLLOW ME</p>
-                <div class="about-icons">
-                    <button class="btn social-btn"><i class="fab fa-facebook-f"></i></button>
-                    <button class="btn social-btn"><i class="fab fa-twitter"></i></button>
-                    <button class="btn social-btn"><i class="fab fa-google-plus-g"></i></button>
-                    <button class="btn social-btn"><i class="fab fa-instagram"></i></button>
-                    <button class="btn social-btn"><i class="fab fa-youtube"></i></button>
-                </div>
+                <button class="btn follow-me-btn">Follow me</button>
+                <ul class="list socials-list">
+                    <li><button class="btn social-btn"><i class="fab fa-facebook-f"></i></button></li>
+                    <li><button class="btn social-btn"><i class="fab fa-twitter"></i></button></li>
+                    <li><button class="btn social-btn"><i class="fab fa-google-plus-g"></i></button></li>
+                    <li><button class="btn social-btn"><i class="fab fa-instagram"></i></button></li>
+                    <li><button class="btn social-btn"><i class="fab fa-youtube"></i></button></li>
+                </ul>
             </div>
             <div class='main-left-box left-div_shadow register-box'>
                 <div class="aside-title">NEWSLETTER</div>
                 <form action="#" class="form-register-letter">
                     <div class="input-div"><input type="email" placeholder="Your email" required></div>  
-                    <div class="input-div"><input type="submit" value="SING UP" class="btn btn-register"></div>
+                    <div class="input-div"><button class="btn btn-register">SING UP</button></div>
                 </form>
             </div>
             <div class='main-left-box left-div_shadow'>

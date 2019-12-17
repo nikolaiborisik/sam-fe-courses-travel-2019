@@ -1,7 +1,5 @@
 @import '../../styles/config.sass'
 
-// basic styles
-
 .header-container
     max-width: $header-content-width
     margin: 0 auto
@@ -13,53 +11,27 @@
         justify-content: space-between
         .header-top__searchbar-label
             border-radius: 5px
-            line-height: 1.5
-            .header-top__searchbar-input
-                border: none
-            .header-top__searchbar-btn
-                padding-left: 0
-        .header-top__logo
+            padding: 10px
         .header-top__subscribe-btn
             border-radius: 2px
-            border: 1px solid rgba(36, 41, 41, .1)
+            border: 1px solid $subscribe-btn-border-color
             padding: 15px 35px
-            color: $default-btn-color
             font-family: Dosis
             font-weight: 600
             font-size: 14px
-            text-transform: uppercase
             letter-spacing: 2.8px
-            transition: .7s
             &:hover
-                background-color: rgba(36, 41, 41, .1)
+                background-color: $subscribe-btn-background-color-on-hover
     .header-nav
         min-height: $header-nav-height
         background-color: $navigation-background-color
         display: flex
         align-items: center
         justify-content: space-between
-        .nav-list
-            .nav-list__element
-                padding: 24px 35px 24px 0
-                text-transform: uppercase
-                color: $default-btn-color
-                letter-spacing: 1.6px
-                font-size: 16px
-                line-height: 30px
-                font-family: Montserrat
-                transition: .7s
-                font-weight: 600
-                &:last-child
-                    padding-right: 0
-                &:hover
-                    color: $active-btn-color
-        .nav-socials-links-list
-            .nav-socials-links-list__element
-                i
-                    font-size: 20px
-                    line-height: 30px
-                padding: 24px 0px 24px 24px
-                color: $default-btn-color
-                transition: .7s
-                &:hover
-                    color: $active-btn-color
+        .nav-list, .nav-socials-links-list
+            &:first-child
+                button
+                    padding-left: 0
+            &:last-child
+                button
+                    padding-right: 0 

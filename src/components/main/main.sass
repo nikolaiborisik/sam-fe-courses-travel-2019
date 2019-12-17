@@ -1,65 +1,79 @@
 @import '../../styles/config.sass'
     
 .main
-    padding: 20px
+    padding: 40px 20px 20px
+    .card
+        .text-content
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 40px
+            flex-basis: calc(100% - 500px)
 
-    .card__text-content
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        padding: 30px
-        flex-basis: calc(100% - 600px)
-        min-width: 500px
+        .category
+            display: inline-block
+            margin-bottom: 15px
+            color: $card-category-text-color
+            font-family: Montserrat
+            font-size: 18px
+            font-weight: 700
+            letter-spacing: 4px
+            text-transform: uppercase
 
-    .card__category
-        display: inline-block
-        margin-bottom: 20px
-        color: $card-category-text-color
-        font-family: Montserrat
-        font-size: 20px
-        font-weight: 700
-        letter-spacing: 4px
-        text-transform: uppercase
+        .header
+            color: $card-header-text-color
+            font-family: Poppins, 'Open Sans'
+            font-size: 35px
+            font-weight: 400
+            line-height: 60px
+            margin-bottom: 15px
 
-    .card__header
-        color: $card-header-text-color
-        font-family: Poppins, 'Open Sans'
-        font-size: 30px
-        font-weight: 400
-        line-height: 50px
+        .actions-block
+            display: flex
+            justify-content: space-between
 
-    .card__actions-block
-        display: flex
-        justify-content: space-between
+        .line
+            height: 3px
+            opacity: .4
+            background-color: $card-line-color
+            margin-bottom: 30px
 
-    .card__share-block
-        display: flex
-        align-items: center
+        .share-block
+            display: flex
+            align-items: center
 
-    .card__short-description
-        color: #6c7374
-        font-family: Raleway
-        font-size: 20px
-        font-weight: 400
-        line-height: 36px
-        margin-bottom: 30px
-    .card__image-block
-        flex-shrink: 0
+        .short-description
+            color: #6c7374
+            font-family: Raleway
+            font-size: 20px
+            font-weight: 400
+            line-height: 30px
+            margin-bottom: 30px
+        .image-block
+            flex-shrink: 0
+        .share-btn
+            height: 100%
+            color: $share-btn-color
+            background-color: $share-btn-background-color
+            &:hover
+                background-color: $share-btn-background-color-on-hover
+                color: $share-btn-color-on-hover
 
-    // .btn_social-btn
-    //     padding: 15px
-    //     font-size: 25px
-    //     color: $active-btn-color
-
+        .readmore-btn
+            background-color: $readmore-btn-background-color
+            &:hover
+                background-color: $readmore-btn-background-color-on-hover
 .card_horizontal
-    .card__image-block
+    display: flex
+    justify-content: space-between
+    .image-block
         flex-basis: 400px
         img
             box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
             transform: scale(110%) translateX(-35px)
 
 .card_vertical
-    .card__image-block
+    .image-block
         img
             width: 100%
 
@@ -68,4 +82,21 @@
     display: flex
     justify-content: space-between
     margin-bottom: 30px
+    .nav-arrow-btn
+        font-family: Raleway
+        color: $pagination-btn-color
+        background-color: $pagination-btn-background-color
+        &:hover
+            background-color: $pagination-btn-background-color-on-hover
+            color: $pagination-btn-color-on-hover
+    .pagination-nav-btn
+        font-family: Raleway
+        padding: 15px 20px
+        border-radius: 50%
+        color: $pagination-nav-btn-color
+        background-color: $pagination-nav-btn-background-color
+        &:hover
+            color: $pagination-nav-btn-color-on-hover 
+            background-color: $pagination-nav-btn-background-color-on-hover
 
+@import './media.sass'

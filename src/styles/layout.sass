@@ -2,18 +2,14 @@ body
     background: $backColor
 .main
     display: grid
-    grid-template-columns: 500px minmax(1000px, 1fr)
-    grid-gap: 30px
+    grid-template-columns: 500px 1fr
+    grid-template-areas: 'aside articles'
+    grid-gap: 20px
+    .aside
+        grid-area: aside
+    .articles
+        grid-area: articles
 
 .gallery
     display: flex
     flex-wrap: wrap
-.bottom
-    height: 10em
-    text-align: center
-
-
-
-
-
-

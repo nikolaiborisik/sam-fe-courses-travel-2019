@@ -1,4 +1,4 @@
-import { ArticleModel } from "./models/ArticleModel";
+import { ArticleModel } from "../models/ArticleModel";
 
 const axios = require('axios');
 
@@ -47,7 +47,7 @@ getInfoButton.addEventListener('click', GetInfo);
 //--------------------Add articles-------------------------
 const getArticleButton = document.querySelector('#getArticle');
 
-const inputArticleTitle: any = document.querySelector('.article-title');
+const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
 const inputArticleContent: any = document.querySelector('.article-content');
 

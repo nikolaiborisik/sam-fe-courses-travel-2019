@@ -1,4 +1,4 @@
 export interface ArticleTags {
-    articleId: number
+    articleId: number,
     tag: string
 }

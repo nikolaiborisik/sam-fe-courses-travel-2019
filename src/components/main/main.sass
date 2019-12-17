@@ -1,18 +1,18 @@
 @import '../../styles/config.sass'
     
 .main
-    padding: 20px
+    padding: 40px 20px 20px
     .card
         .text-content
             display: flex
             flex-direction: column
             justify-content: space-between
-            padding: 25px
-            flex-basis: calc(100% - 350px)
+            padding: 40px
+            flex-basis: calc(100% - 500px)
 
         .category
             display: inline-block
-            margin-bottom: 20px
+            margin-bottom: 15px
             color: $card-category-text-color
             font-family: Montserrat
             font-size: 18px
@@ -25,12 +25,18 @@
             font-family: Poppins, 'Open Sans'
             font-size: 35px
             font-weight: 400
-            line-height: 30px
-            margin-bottom: 20px
+            line-height: 60px
+            margin-bottom: 15px
 
         .actions-block
             display: flex
             justify-content: space-between
+
+        .line
+            height: 3px
+            opacity: .4
+            background-color: $card-line-color
+            margin-bottom: 30px
 
         .share-block
             display: flex
@@ -42,10 +48,9 @@
             font-size: 20px
             font-weight: 400
             line-height: 30px
-            margin-bottom: 15px
+            margin-bottom: 30px
         .image-block
             flex-shrink: 0
-
         .share-btn
             height: 100%
             color: $share-btn-color
@@ -59,11 +64,13 @@
             &:hover
                 background-color: $readmore-btn-background-color-on-hover
 .card_horizontal
+    display: flex
+    justify-content: space-between
     .image-block
-        flex-basis: 300px
+        flex-basis: 400px
         img
             box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-            transform: scale(120%) translateX(-35px)
+            transform: scale(110%) translateX(-35px)
 
 .card_vertical
     .image-block

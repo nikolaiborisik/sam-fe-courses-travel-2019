@@ -29,7 +29,7 @@ function GetInfo() {      //gets info from json-server
 //   cardImage2.setAttribute("src", data[1].image);
 // }
 
-let articleContainer = document.querySelector('.articles');
+let articleContainer = document.querySelector('.cards-container');
 function UpdateInfo(data:any){
   for (let i=0; i<data.length; i++) {
     let elem = document.querySelector('.card_horizontal');

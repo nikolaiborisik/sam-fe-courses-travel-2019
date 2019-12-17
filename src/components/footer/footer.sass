@@ -51,7 +51,6 @@
                 border-color: transparent transparent red transparent
                 border-width: 0 0 15px 15px
                 content: ''
-                transition: .7s
             &::before
                 position: absolute
                 bottom: 0
@@ -62,14 +61,13 @@
                 border-color: transparent transparent transparent red
                 border-width: 15px 0 0 15px
                 content: ''
-                transition: .7s
             &:hover
                 background-color: $back-to-top-btn-background-color-on-hover
                 color: $back-to-top-btn-color-on-hover
                 &::after
-                border-color: transparent transparent $back-to-top-btn-color-on-hover transparent
+                    border-color: transparent transparent $back-to-top-btn-color-on-hover transparent
                 &::before
-                border-color: transparent transparent transparent $back-to-top-btn-color-on-hover
+                    border-color: transparent transparent transparent $back-to-top-btn-color-on-hover
 
         .footer-nav-btn
             padding: 40px 20px

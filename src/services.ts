@@ -19,21 +19,33 @@ function GetInfo() {      //gets info from json-server
   });          
 }
 
-function UpdateInfo(data:any) {   //updates info on the page
- // for (let i=0; i<data.length; i++) {    
-  cardHeader1.innerText = data[0].title;      //header of 1st article goes to webpage
-  cardShortDescription1.innerText = data[0].shortDescription; 
-  cardImage1.setAttribute("src", data[0].image);  //image1 loads to webpage
-  cardHeader2.innerText = data[1].title;
-  cardShortDescription2.innerText = data[1].shortDescription;
-  cardImage2.setAttribute("src", data[1].image);
-  
+// function UpdateInfo(data:any) {   //updates info on the page
+//  // for (let i=0; i<data.length; i++) {
+//   cardHeader1.innerText = data[0].title;      //header of 1st article goes to webpage
+//   cardShortDescription1.innerText = data[0].shortDescription;
+//   cardImage1.setAttribute("src", data[0].image);  //image1 loads to webpage
+//   cardHeader2.innerText = data[1].title;
+//   cardShortDescription2.innerText = data[1].shortDescription;
+//   cardImage2.setAttribute("src", data[1].image);
+// }
+
+let articleContainer = document.querySelector('.articles');
+function UpdateInfo(data:any){
+  for (let i=0; i<data.length; i++) {
+    let elem = document.querySelector('.card_horizontal');
+    let articleShape = elem.cloneNode(true);
+    articleContainer.append(articleShape);
+    cardHeader1.innerText = data[0].title;      //header of 1st article goes to webpage
+    cardShortDescription1.innerText = data[0].shortDescription;
+    cardImage1.setAttribute("src", data[0].image);  //image1 loads to webpage
+    console.log('appended');
+  }
 }
 
 getInfoButton.addEventListener('click', GetInfo);
 
+//--------------------Add articles-------------------------
 const getArticleButton = document.querySelector('#getArticle');
-const removeArticleButton = document.querySelector('#removeArticle');
 
 const inputArticleTitle: any = document.querySelector('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
@@ -53,6 +65,9 @@ function postArticle(){
 }
 
 getArticleButton.addEventListener('click', postArticle);
+
+//----------------------remove articles--------------------------------------
+const removeArticleButton = document.querySelector('#removeArticle');
 
 function removeArticle (){
   const inputToDelete: any = document.querySelector('.toDelete');

@@ -11,35 +11,46 @@ input
 // ----------btns styles----------------------
 
 .btn
-  padding: 7px 12px
+  padding: $default-btn-paddings-y $default-btn-paddings-x
+  font-family: $primary-font-family
+  font-size: $default-font-size
+  background-color: $default-btn-background-color
+  text-transform: uppercase
   text-decoration: none
   border: none
   cursor: pointer
-  font-family: Raleway
-  font-size: 25px
-  text-transform: uppercase
-  background-color: $default-btn-background-color
-  // transition: all .7s
-.btn_sm
-  padding: 7px 10px
-  font-size: 15px
+  letter-spacing: 1.6px
 
 .social-btn
-  letter-spacing: 1.6px
-  font-size: 20px
-  padding: 15px
-  font-family: Montserrat
+  font-size: $large-font-size
+  padding: $default-btn-paddings-y $small-btn-paddings-x
   &:hover
       color: $navigation-btn-background-color-on-hover
 
 .nav-btn
-    letter-spacing: 1.6px
-    font-size: 20px
-    padding: 15px
-    font-family: Montserrat
+    padding: $default-btn-paddings-y $small-btn-paddings-x
     &:hover
         color: $navigation-btn-background-color-on-hover
 
+.subscribe-btn
+    border-radius: 2px
+    border: 1px solid $subscribe-btn-border-color
+    font-family: $accent-font-family
+    &:hover
+        background-color: $subscribe-btn-background-color-on-hover
+
+.readmore-btn
+    padding: $default-btn-paddings-y $default-btn-paddings-x
+    background-color: $readmore-btn-background-color
+    &:hover
+        background-color: $readmore-btn-background-color-on-hover
+
+.share-btn
+    color: $share-btn-color
+    background-color: $share-btn-background-color
+    &:hover
+        background-color: $share-btn-background-color-on-hover
+        color: $share-btn-color-on-hover
 // ------------------------------------------------------------------
 
 .list

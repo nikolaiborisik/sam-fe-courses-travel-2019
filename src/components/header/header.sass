@@ -1,7 +1,8 @@
+@import '../../styles/colors.sass'
 @import '../../styles/config.sass'
 
 .header-container
-    max-width: $header-content-width
+    max-width: 1170px
     margin: 0 auto
     .header-top
         min-height: $header-top-height
@@ -16,16 +17,6 @@
                 padding: 10px
                 border-top-left-radius: 5px
                 border-bottob-left-radius: 5px
-        .subscribe-btn
-            border-radius: 2px
-            border: 1px solid $subscribe-btn-border-color
-            padding: 15px 35px
-            font-family: Dosis
-            font-weight: 600
-            font-size: 14px
-            letter-spacing: 2.8px
-            &:hover
-                background-color: $subscribe-btn-background-color-on-hover
     .header-nav
         min-height: $header-nav-height
         background-color: $navigation-background-color
@@ -34,13 +25,6 @@
         justify-content: space-between
         position: relative
         padding: 0 20px
-        .nav-list, .nav-socials-links-list
-            &:first-child
-                button
-                    padding-left: 0
-            &:last-child
-                button
-                    padding-right: 0
         
         .toggle-main-menu-label, .toggle-socials-links-label
             display: none

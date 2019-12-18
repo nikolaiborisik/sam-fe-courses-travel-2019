@@ -1,92 +1,16 @@
-// @media all and ( max-width: 1800px )
-//     .main
-//         .card
-//             .text-content
-//                 padding: 20px
-//                 flex-basis: calc(100% - 450px)
-//             .category
-//                 font-size: 17px
-//             .header
-//                 line-height: 40px
-//                 margin-bottom: 10px
-//                 font-size: 25px
-//             .short-description
-//                 line-height: 30px
-//                 margin-bottom: 20px
-//                 font-size: 20px
-//             .line
-//                 margin-bottom: 15px
-//             .share-btn, .readmore-btn
-//                 padding: 10px 10px
-//                 font-size: 20px
-//         .card_horizontal
-//             .image-block
-//                 flex-basis: 350px
-//                 img
-//                     transform: scale(110%) translateX(-35px)
+@media all and ( max-width: 1440px )
+    .main
+        grid-template-columns: 380px 1fr
 
-// @media all and ( max-width: 1500px )
-//     .main
-//         grid-template-columns: 380px 1fr
-//         .card
-//             .text-content
-//                 padding: 20px
-//                 flex-basis: calc(100% - 340px)
-//             .category
-//                 font-size: 15px
-//             .header
-//                 line-height: 30px
-//                 margin-bottom: 10px
-//                 font-size: 22px
-//             .short-description
-//                 line-height: 25px
-//                 margin-bottom: 15px
-//                 font-size: 17px
-//             .line
-//                 margin-bottom: 12px
-//         .card_horizontal
-//             .image-block
-//                 flex-basis: 300px
-//                 img
-//                     transform: scale(110%) translateX(-30px)
-// @media all and ( max-width: 1200px )
-//     .main
-//         grid-template-columns: minmax(850px, 1fr)
-//         grid-template-areas: 'articles' 'aside'
-//         grid-template-columns: auto
-// @media all and ( max-width: 800px )
-//     .main
-//         .card
-//             .text-content
-//                 padding: 20px
-//                 flex-basis: 1
-//             .category
-//                 font-size: 20px
-//                 margin-bottom: 25px
-//             .header
-//                 line-height: 25px
-//                 margin-bottom: 25px
-//                 font-size: 25px
-//             .short-description
-//                 line-height: 30px
-//                 margin-bottom: 25px
-//                 font-size: 20px
-//             .line
-//                 margin-bottom: 25px
-//             .share-btn, .readmore-btn
-//                 flex-grow: 1
-//                 padding: 15px 10px
-//                 font-size: 17px
-//             .actions-block
-//                 flex-direction: column
-//                 .share-block
-//                     margin-top: 10px
-//                     justify-content: space-between
-//         .card_horizontal
-//             flex-direction: column
-//             .image-block
-//                 order: -1
-//                 img
-//                     margin: 40px auto 10px
-//                     max-width: 400px
-//                     transform: none
+@media all and ( max-width: 1300px )
+    .main
+        grid-template-columns: minmax(850px, 1fr)
+        grid-template-areas: 'articles' 'aside'
+        grid-template-columns: auto
+
+@media all and ( max-width: 700px )
+    .pagination
+        flex-direction: column
+        .pagination__nav-arrow-btn
+            margin: $large-margin 0
+            padding: $default-padding

@@ -1,51 +1,49 @@
 @import '../../styles/colors.sass'
+@import '../../styles/config.sass'
 
 .map
-  margin: 0 10px
-  width: 360px
+  margin: 0 $small-margin
+  max-width: 360px
 
 .main-left-box
   display: flex
   flex-direction: column
   align-items: center
-  padding: 30px
-  margin-bottom: 20px
-  align-items: center
-  font-family: Montserrat
+  padding: $default-padding
+  margin-bottom: $large-margin
 
 .aside-title
-  font-size: 25px
+  font-size: $large-font-size
+  font-family: $primary-font-family
   font-weight: bold
-  margin: 25px 0
+  margin: $large-margin 0
   text-align: center
 
+.aside__social-btn
+  font-size: $large-font-size
+  padding: $extra-large-btn-padding
+
 .about-text
-  width: 80%
   line-height: 30px
-  margin-bottom: 50px
+  margin-bottom: $extra-large-margin
+  font-family: $info-font-family
 
 .about-icons i
-  margin-right: 20px
-
-.about-box .btn
-  margin-bottom: 15px
-  font-size: 18px
+  margin-right: $large-margin
 
 .categories
   width: 100%
   display: flex
   flex-direction: column
 
-.categories li
-  // width: 300px
-  width: 100%
-  padding: 25px
-  border-bottom: 1px solid #d4d4d4
-  text-align: center
+// .categories li
+//   width: 100%
+//   border-bottom: 1px solid #d4d4d4
+//   text-align: center
 
 
-.categories li:hover
-  background-color: $active-btn-color
+// .categories li:hover
+//   background-color: $active-btn-color
 
 .categories li:last-child
   border-bottom: 0
@@ -53,17 +51,17 @@
 .tags-container
   width: 100%
   display: flex
+  flex-wrap: wrap
+  // grid-template-columns: 1fr 1fr
+  // grid-column-gap: $extra-large-margin
   justify-content: space-around
 
-.tag-item
-  border: 3px solid $active-btn-color
-  text-align: center
-  padding: 15px
-  margin-bottom: 20px
-  font-size: 16px
-
-.tag-item:hover
-  background-color: $active-btn-color
+// .tag-item
+//   border: 3px solid $active-btn-color
+//   text-align: center
+//   padding: 15px
+//   margin-bottom: 20px
+//   font-size: 16px
 
 .register-box
   height: 250px
@@ -74,8 +72,8 @@
   width: 100%
 
 .form-register-letter input[type="email"]
-  margin-bottom: 20px
-  font-size: 16px
+  margin-bottom: $large-margin
+  font-size: $medium-font-size
 
 .form-register-letter input[type="button"]
   margin: 0
@@ -91,7 +89,7 @@
     resize: none
     width: 100%
   input
-    padding: 10px
+    padding: $extra-small-padding
     width: 100%
 
 .add-article
@@ -108,7 +106,7 @@
 .add-input
   cursor: pointer
   border: 1px solid #eef2f6
-  margin-bottom: 10px
+  margin-bottom: $small-margin
 
 .follow-me-btn
   width: 100%

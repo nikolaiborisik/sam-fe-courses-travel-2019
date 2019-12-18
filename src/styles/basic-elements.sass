@@ -11,7 +11,8 @@ input
 // ----------btns styles----------------------
 
 .btn
-  padding: $default-btn-paddings-y $default-btn-paddings-x
+  display: block
+  padding: $small-btn-padding $default-btn-padding
   font-family: $primary-font-family
   font-size: $default-font-size
   background-color: $default-btn-background-color
@@ -23,34 +24,75 @@ input
 
 .social-btn
   font-size: $large-font-size
-  padding: $default-btn-paddings-y $small-btn-paddings-x
+  padding: $small-btn-padding $default-btn-padding
   &:hover
       color: $navigation-btn-background-color-on-hover
 
 .nav-btn
-    padding: $default-btn-paddings-y $small-btn-paddings-x
+    padding: $small-btn-padding $default-btn-padding
     &:hover
         color: $navigation-btn-background-color-on-hover
 
 .subscribe-btn
     border-radius: 2px
     border: 1px solid $subscribe-btn-border-color
+    letter-spacing: 2px
     font-family: $accent-font-family
+    font-size: $medium-font-size
+    padding: $default-btn-padding $large-btn-padding
     &:hover
         background-color: $subscribe-btn-background-color-on-hover
 
 .readmore-btn
-    padding: $default-btn-paddings-y $default-btn-paddings-x
+    font-family: $info-font-family
+    padding: $small-btn-padding $large-btn-padding
     background-color: $readmore-btn-background-color
     &:hover
         background-color: $readmore-btn-background-color-on-hover
 
 .share-btn
+    font-family: $info-font-family
     color: $share-btn-color
     background-color: $share-btn-background-color
     &:hover
         background-color: $share-btn-background-color-on-hover
         color: $share-btn-color-on-hover
+
+.nav-arrow-btn
+    font-family: $info-font-family
+    color: $pagination-btn-color
+    background-color: $pagination-btn-background-color
+    &:hover
+        background-color: $pagination-btn-background-color-on-hover
+        color: $pagination-btn-color-on-hover
+.pagination-nav-btn
+    font-family: $info-font-family
+    padding: $extra-large-btn-padding
+    border-radius: 50%
+    color: $pagination-nav-btn-color
+    background-color: $pagination-nav-btn-background-color
+    &:hover
+        color: $pagination-nav-btn-background-color-on-hover
+        // background-color: $pagination-nav-btn-background-color-on-hover
+
+.category-btn
+    padding: $extra-large-btn-padding
+    width: 100%
+    border-bottom: 1px solid #d4d4d4
+    &:hover
+        background-color: $pagination-nav-btn-background-color-on-hover
+
+.tag-btn
+    padding: $extra-large-btn-padding
+    border: 2px solid $active-btn-color
+    width: 100%
+    margin-bottom: $large-margin
+    input
+      display: none
+    &:hover
+        background-color: $pagination-nav-btn-background-color-on-hover
+    input:checked
+        background-color: $pagination-nav-btn-background-color-on-hover
 // ------------------------------------------------------------------
 
 .list
@@ -60,13 +102,10 @@ input
     li
         display: inline-block
 
-.nav-list
-    &:first-child
-        button
-            padding-left: 0
-    &:last-child
-          button
-              padding-right: 0
+.socials-list
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
 
 .card
     margin-bottom: 40px

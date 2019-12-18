@@ -1,18 +1,24 @@
+$image-block-width-large: 400px
+$image-block-width-medium: 350px
+$image-block-gap: 35px
+$image-scale: 110%
+
 @import '../../styles/colors.sass'
-    
+@import '../../styles/config.sass'    
+
 .card__text-content
     display: flex
     flex-direction: column
     justify-content: space-between
-    flex-basis: calc(100% - 500px)
-    padding: 40px
+    flex-basis: calc(100% - #{$image-block-width-large} - #{$image-block-gap})
+    padding: $large-padding
 
 .card__category
     display: inline-block
-    margin-bottom: 15px
+    margin-bottom: $large-margin
     color: $card-category-text-color
     font-family: Montserrat
-    font-size: 18px
+    font-size: $large-btn-padding
     font-weight: 700
     letter-spacing: 4px
     text-transform: uppercase
@@ -20,49 +26,58 @@
 .card__header
     color: $card-header-text-color
     font-family: Poppins, 'Open Sans'
-    font-size: 35px
+    font-size: $extra-large-font-size
     font-weight: 400
-    line-height: 60px
-    margin-bottom: 15px
+    margin-bottom: $extra-large-margin
+    line-height: 35px
+
+.card__line
+    height: 3px
+    opacity: .4
+    background-color: $card-line-color
+    margin-bottom: $extra-large-margin
+
+.card__short-description
+    color: #6c7374
+    font-family: $info-font-family
+    font-size: $default-font-size
+    font-weight: 400
+    line-height: 30px
+    margin-bottom: $extra-large-margin
 
 .card__actions-block
     display: flex
     justify-content: space-between
 
 .actions-block
-    
 
-.card__line
-    height: 3px
-    opacity: .4
-    background-color: $card-line-color
-    margin-bottom: 30px
+    .action-block__readmore-btn
 
-.card__share-block
-    display: flex
-    align-items: center
+    .share-block
+        display: flex
+        align-items: center
 
-.card__short-description
-    color: #6c7374
-    font-family: Raleway
-    font-size: 20px
-    font-weight: 400
-    line-height: 30px
-    margin-bottom: 30px
+        .share-block__share-btn
+            height: 100%
+
+        .share-block__social-btn
+
+
 .card__image-block
     flex-shrink: 0
-.card__share-btn
-    height: 100%
+
 .card_horizontal
     display: flex
     justify-content: space-between
     .card__image-block
-        flex-basis: 400px
+        flex-basis: $image-block-width-large
         img
             box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-            transform: scale(110%) translateX(-35px)
+            transform: scale($image-scale) translateX(-($image-block-gap))
 
 .card_vertical
     .card__image-block
         img
             width: 100%
+
+@import './media.sass'

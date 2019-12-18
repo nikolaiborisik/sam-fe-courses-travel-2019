@@ -1,27 +1,16 @@
 @import '../../styles/colors.sass'
+@import '../../styles/config.sass'
     
 .main
-    padding: 40px 20px 20px
+    padding: $large-padding $default-padding $default-padding
 .pagination
     width: 100%
     display: flex
     justify-content: space-between
-    margin-bottom: 30px
-    .nav-arrow-btn
-        font-family: Raleway
-        color: $pagination-btn-color
-        background-color: $pagination-btn-background-color
-        &:hover
-            background-color: $pagination-btn-background-color-on-hover
-            color: $pagination-btn-color-on-hover
-    .pagination-nav-btn
-        font-family: Raleway
-        padding: 15px 20px
-        border-radius: 50%
-        color: $pagination-nav-btn-color
-        background-color: $pagination-nav-btn-background-color
-        &:hover
-            color: $pagination-nav-btn-color-on-hover 
-            background-color: $pagination-nav-btn-background-color-on-hover
+    margin-bottom: $extra-large-margin
+    .pagination__list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
 
 @import './media.sass'

@@ -111,16 +111,30 @@ function numberOfPages(){
     })
 }
 
+// var t;
+// function up() {
+// 	var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+// 	if(top > 0) {
+// 		window.scrollBy(0,-100);
+// 		t = setTimeout('up()',20);
+// 	} else clearTimeout(t);
+// 	return false;
+// }
+
 //change current page, get articles from current page
-function pagination(e: any){
+function pagination(e: Event){
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('!');
     const pageButtons: any = document.querySelectorAll('.pagination-nav-btn'); //????????????????
-    let clickedPage = e.target;
-    currentPage = clickedPage.value;
+    let clickedPage = e.target as HTMLInputElement;
+    currentPage = Number(clickedPage.value);
     pageButtons.forEach(function(elem: any){
         elem.classList.remove('btn-activePage');
     })
     clickedPage.classList.add('btn-activePage');
     getInfo();
+    window.scrollTo(0, 0)
 }
 
 

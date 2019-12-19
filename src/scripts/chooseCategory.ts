@@ -3,7 +3,6 @@ let categoryRadio = <HTMLInputElement><unknown>document.getElementsByName("categ
 let categoryValue: string;
 
 
-
 categoryForm.addEventListener('change', getCategory);
 
 function getCategory() {

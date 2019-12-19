@@ -4,7 +4,7 @@ let currentPage: number = 1;
 let currentNumberOfPages: number;
 let currentCategories: string[];
 let currentTags: string[];
-export default {
+export const data = {
     baseApiURL,
     limit,
     currentPage,

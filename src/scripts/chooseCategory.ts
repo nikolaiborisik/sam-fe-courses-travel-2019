@@ -1,45 +1,42 @@
+import { getInfoByCateg } from "./services";
+
 let categoryForm = <HTMLFormElement>document.getElementById("categoryForm");
 let categoryRadio = <HTMLInputElement><unknown>document.getElementsByName("categoryRadio");
 let categoryValue: string;
 
 
+
 categoryForm.addEventListener('change', getCategory);
 
 function getCategory() {
-  /*  for (let i=0; i<categoryForm.length; i++) {
-        if (categoryRadio[i].checked) {
-            categoryValue = categoryRadio[i].value.toString();
-        }
-        getInfoByCateg(categoryValue);
-        alert(categoryValue);
-    }  */
    categoryValue = categoryForm.categoryRadio.value; 
    alert(categoryValue);
 
    getInfoByCateg(categoryValue);
 } 
 
-function getInfoByCateg(nature: string) {
 
-}
 
 //------------------------------------------------------------
-let tagsForm = <HTMLFormElement>document.getElementById("tagsForm");
-let tagCheckbox = <HTMLInputElement><unknown>document.getElementsByName("tagCheckbox");
-let tagsValue: string;
+let tagsForm: any = document.getElementById("tagsForm");
+//let tagCheckbox = <HTMLInputElement><unknown>document.getElementsByName("tagCheckbox");
+let tagsValueArr: string[] = [];
 
-tagsForm.addEventListener('click', getTags);
+tagsForm.addEventListener('change', getTags);
 
 function getTags() {
-   // tagsValue = tagsForm.tagCheckbox.value;
+    //tagsValue = tagsForm.tagCheckbox.value;
    for (let i=0; i<tagsForm.length; i++) {
-    //   if (tagsForm[i].checked) {
-    //       arrayTags =
-    //   }
-
-   }
-    // alert(tagsValue);
-
+       if (tagsForm[i].checked) {
+            if (tagsValueArr.indexOf(tagsForm[i].value) == -1) {
+                tagsValueArr.push(tagsForm[i].value);
+            }
+       }
+       else {
+        tagsValueArr.splice(i, 1); 
+       }
+    }
+ alert(tagsValueArr);
 }
 
 

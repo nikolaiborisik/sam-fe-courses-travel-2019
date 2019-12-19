@@ -7,7 +7,7 @@
       "createDate": "10.12.2019",
       "content": "Article1_content",
       "image": "./images/article-logo-1.png",
-      "name": "nature"
+      "name": "nature"   
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "createDate": "10.12.2019",
       "content": "Article2_content",
       "image": "./images/article-logo-2.png",
-      "name": "nightlife"
+      "name": "nature"      
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
       "image": "./images/article-logo-4.png",
-      "name": "lost"
+      "name": "nature"
     },
     {
       "title": "Dranic",
@@ -49,19 +49,22 @@
       "shortDescription": "",
       "content": "",
       "image": "./images/article-logo-3.png",
-      "id": 6
+      "id": 6,
+      "name": "nature"
     },
     {
-      "title": "3",
-      "shortDescription": "",
+      "title": "Cakes",
+      "shortDescription": "cakes",
       "content": "",
-      "id": 7
+      "id": 7,
+      "name": "food"
     },
     {
-      "title": "idohjoistrjhoi",
+      "title": "Night Sky",
       "shortDescription": "",
       "content": "",
-      "id": 8
+      "id": 8,
+      "name": "nightlife"
     }
   ],
   "categories": [

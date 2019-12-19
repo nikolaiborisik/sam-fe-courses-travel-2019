@@ -79,10 +79,11 @@ function getInfo() {      //gets info from json-server
 
 export function getInfoByCateg(categ: string){
     alert("Info with categ uploaded!");
-    currentCategory = 'nature'; //=categ
+    currentCategory = categ; //=categ
     currentUrl = baseApiURL + `?_page=${currentPage}&_limit=${limit}`;
     currentCategory? currentUrl+=`&name=${categ}`: currentUrl = currentUrl;
     axios.get(currentUrl).then(function(response:any) {
+        clearArticles();
         updateInfo(response.data);
     });
 }
@@ -136,6 +137,10 @@ function pagination(e: Event){
     })
     clickedPage.classList.add('btn-activePage');
     getInfo();
+    //
+  //  clearArticles();
+    getInfoByCateg(currentCategory)
+    //
     window.scrollTo(0, 0)
 }
 

@@ -78,6 +78,7 @@ input
 .category-btn
     padding: $extra-large-btn-padding
     width: 100%
+    text-align: center
     border-bottom: 1px solid #d4d4d4
     &:hover
         background-color: $pagination-nav-btn-background-color-on-hover
@@ -87,12 +88,27 @@ input
     border: 2px solid $active-btn-color
     width: 100%
     margin-bottom: $large-margin
-    input
-      display: none
     &:hover
         background-color: $pagination-nav-btn-background-color-on-hover
-    input:checked
+
+.searchbar-btn
+    display: inline-block
+
+.add-btn
+    width: 100%
+    &:hover
         background-color: $pagination-nav-btn-background-color-on-hover
+
+.follow-me-btn
+    width: 100%
+    &:hover
+        background-color: $pagination-nav-btn-background-color-on-hover
+
+.btn-register
+    width: 100%
+    &:hover
+        background-color: $pagination-nav-btn-background-color-on-hover
+
 // ------------------------------------------------------------------
 
 .list
@@ -108,7 +124,7 @@ input
   flex-wrap: wrap
 
 .card
-    margin-bottom: 40px
+    margin-bottom: $extra-large-margin
     box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
     background-color: $card-background-color
     position: relative

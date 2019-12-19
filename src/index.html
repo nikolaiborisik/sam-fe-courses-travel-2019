@@ -14,7 +14,7 @@
         <div class="header-top">
             <label class="searchbar-label">
                 <input type="text" class="searchbar-input" placeholder="Search and hit enter">
-                <button type='submit' class="btn btn_sm searchbar-btn"><i class="fas fa-search"></i></button>
+                <button type='submit' class="btn searchbar-btn"><i class="fas fa-search"></i></button>
             </label>
             <div class="logo">
                 <img src="./images/logo.png" alt="Logo">
@@ -77,28 +77,21 @@
             <div class='main-left-box left-div_shadow'>
                 <h2 class="aside-title">CATEGORIES</h2>
                 <ul class="categories">
-                    <li><button class="btn category-btn">Nature</button></li>
-                    <li><button class="btn category-btn">Nightlife</button></li>
-                    <li><button class="btn category-btn">Lifestyle</button></li>
-                    <li><button class="btn category-btn">Food</button></li>
+                    <li><input type="radio" name='categoties-input' id='nature-category' class='categories-input'><label class="btn category-btn" for='nature-category'>Nature</label></li>
+                    <li><input type="radio" name='categoties-input' id='nightlife-category' class='categories-input'><label class="btn category-btn" for='nightlife-category'>Nightlife</label></li>
+                    <li><input type="radio" name='categoties-input' id='lifestyle-category' class='categories-input'><label class="btn category-btn" for='lifestyle-category'>Lifestyle</label></li>
+                    <li><input type="radio" name='categoties-input' id='food-category' class='categories-input'><label class="btn category-btn" for='food-category'>Food</label></li>
                 </ul>
             </div>
             <div class='main-left-box left-div_shadow'>
                 <h2 class="aside-title">TAGS</h2>
                 <ul class="list tags-container">
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'>NATURE</label></li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'>NATURE</label></li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'>NATURE</label></li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'>NATURE</label></li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'>NATURE</label></li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'>NATURE</label></li>
-                    <!-- <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'></label>TREKKING</li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'></label>LIFESTYLE</li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'></label>TRAVEL</li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'></label>LOST</li>
-                    <li class="tag-item"><label class="btn tag-btn"><input type='checkbox'></label>LIFESTYLE</li> -->
+                    <li class="tag-item"><input type='checkbox' name='tag-input' class='tag-input' id='nature-tag'><label class="btn tag-btn" for='nature-tag'>NATURE</label></li>
+                    <li class="tag-item"><input type='checkbox' name='tag-input' class='tag-input' id='trekking-tag'><label class="btn tag-btn" for='trekking-tag'>TREKKING</label></li>
+                    <li class="tag-item"><input type='checkbox' name='tag-input' class='tag-input' id='lifestyle-tag'><label class="btn tag-btn" for='lifestyle-tag'>LIFESTYLE</label></li>
+                    <li class="tag-item"><input type='checkbox' name='tag-input' class='tag-input' id='travel-tag'><label class="btn tag-btn" for='travel-tag'>TRAVEL</label></li>
+                    <li class="tag-item"><input type='checkbox' name='tag-input' class='tag-input' id='lost-tag'><label class="btn tag-btn" for='lost-tag'>LOST</label></li>
                 </ul>
-
             </div>
             <div class="main-left-box add-article left-div_shadow">
                 <h2 class="aside-title">ADD ARTICLE</h2>
@@ -114,13 +107,13 @@
                             <textarea class="add-input article-content" rows="7"></textarea>
                         </div>
                         <div class="input-div">
-                            <input class=" btn add-btn btn_sm" id="getArticle" type="button" value="Send">
+                            <input class="btn add-btn" id="getArticle" type="button" value="Send">
                         </div>
                         <div class="input-div">
                             <input class="add-input toDelete" type="text" placeholder="Enter the id of the item to be deleted">
                         </div>
                         <div class="input-div">
-                            <input class=" btn add-btn btn_sm" id="removeArticle" type="button" value="Remove">
+                            <input class="btn add-btn" id="removeArticle" type="button" value="Remove">
                         </div>
                     </div>
                 </form>
@@ -224,13 +217,13 @@
             </ul>
         </section>
         <section class="back-to-top">
-            <div class="logo">
+            <div class="logo footer__logo">
                 <img src="./images/logo.png" alt="">
             </div>
             <nav class="nav footer-nav">
                 <input class="toggle-nav-list-input" type='checkbox' id="toggle-list-input">
                 <label class="toggle-nav-list-label" for='toggle-list-input'><i class="fas fa-bars"></i></label>
-                <ul class="list nav-list">
+                <ul class="list nav-list footer__nav-list">
                     <li><button class="btn nav-btn footer-nav-btn">home</button></li>
                     <li><button class="btn nav-btn footer-nav-btn">featured</button></li>
                     <li><button class="btn nav-btn footer-nav-btn">BLOGS</button></li>

@@ -1,4 +1,5 @@
 @import '../../styles/colors.sass'
+@import '../../styles/config.sass'
 
 .footer
     .connected
@@ -9,7 +10,7 @@
             display: flex
             flex-wrap: wrap
             justify-content: center
-            padding: 40px 0 80px
+            padding: $extra-large-margin 0 (2 * $extra-large-margin)
 
     .back-to-top
         display: flex
@@ -17,31 +18,31 @@
         align-items: center
         justify-content: center
         position: relative
-        padding: 50px 0
-        background-color: $back-to-top-section-background-color
+        padding: $extra-large-margin 0
+        background-color: $bgc-secondary
         .toggle-nav-list-label
             display: none
-            padding: 10px
+            padding: $small-margin
             i
-                color: $default-btn-color
-                font-size: 50px
+                color: $text-color-default
+                font-size: $extra-large-font-size
                 transition: .7s
                 
         .toggle-nav-list-input
             display: none
             &:checked ~ .toggle-nav-list-label
                 i
-                    color: $active-btn-color
+                    color: $text-color-default-active
                     transform: rotate(90deg)
             &:checked ~ .nav-list
                 display: block
 
         .back-to-top-btn
             position: absolute
-            bottom: -20px
-            background-color: $back-to-top-btn-background-color
-            padding: 20px 40px
-            color: $back-to-top-btn-color
+            bottom: -($extra-large-margin)
+            background-color: $bgc-extra-light
+            padding: $small-padding $large-padding
+            color: $text-color-default
             &::after
                 position: absolute
                 bottom: 0
@@ -50,7 +51,7 @@
                 height: 0
                 border-style: solid
                 border-color: transparent transparent red transparent
-                border-width: 0 0 15px 15px
+                border-width: 0 0 $small-margin $small-margin
                 content: ''
             &::before
                 position: absolute
@@ -60,24 +61,24 @@
                 height: 0
                 border-style: solid
                 border-color: transparent transparent transparent red
-                border-width: 15px 0 0 15px
+                border-width: $small-margin 0 0 $small-margin
                 content: ''
             &:hover
-                background-color: $back-to-top-btn-background-color-on-hover
-                color: $back-to-top-btn-color-on-hover
+                background-color: $bgc-dark
+                color: $text-color-default-active
                 &::after
-                    border-color: transparent transparent $back-to-top-btn-color-on-hover transparent
+                    border-color: transparent transparent $text-color-default-active transparent
                 &::before
-                    border-color: transparent transparent transparent $back-to-top-btn-color-on-hover
+                    border-color: transparent transparent transparent $text-color-default-active
 
         .footer-nav-btn
-            padding: 40px 20px
+            padding: $large-padding $small-padding
                 
     .designed-by
-        padding: 50px 30px
+        padding: $large-padding $default-padding
         p
             text-align: right
-            font-size: 30px
-            font-family: Montserrat
+            font-size: $large-font-size
+            font-family: $secondary-font-family
 
 @import './media.sass'

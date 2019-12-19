@@ -10,13 +10,13 @@
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 0 20px
+        padding: 0 $small-padding
         .searchbar-label
             border-radius: 5px
             .searchbar-input
-                padding: 10px
+                padding: $extra-small-padding
                 border-top-left-radius: 5px
-                border-bottob-left-radius: 5px
+                border-bottom-left-radius: 5px
     .header-nav
         min-height: $header-nav-height
         background-color: $navigation-background-color
@@ -24,21 +24,21 @@
         align-items: center
         justify-content: space-between
         position: relative
-        padding: 0 20px
+        padding: 0 $small-padding
         
         .toggle-main-menu-label, .toggle-socials-links-label
             display: none
-            padding: 10px
+            padding: $extra-small-padding
             border-radius: 50%
             i
-                color: $default-btn-color
-                font-size: 50px
+                color: $text-color-default
+                font-size: $extra-large-font-size
                 transition: .7s
         .toggle-main-menu-input
             display: none
             &:checked ~ .toggle-main-menu-label
                 i
-                    color: $active-btn-color
+                    color: $text-color-default-active
                     transform: rotate(90deg)
             &:checked ~ .nav-list
                 display: block
@@ -46,7 +46,7 @@
             display: none
             &:checked ~ .toggle-socials-links-label
                 i
-                    color: $active-btn-color
+                    color: $text-color-default-active
                     transform: rotate(90deg)
             &:checked ~ .nav-socials-links-list
                 display: block

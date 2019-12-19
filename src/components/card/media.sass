@@ -1,0 +1,124 @@
+@import '../../styles/config.sass'
+
+@media all and ( max-width: 1800px )
+    .card__text-content
+        padding: $default-padding
+        flex-basis: calc(100% - #{$image-block-width-medium} - #{$image-block-gap})
+    .card__category
+        font-size: $medium-font-size
+    .card__header
+        margin-bottom: $default-margin
+        font-size: $large-font-size
+    .card__short-description
+        margin-bottom: $large-margin
+        font-size: $default-font-size
+    .card__line
+        margin-bottom: $default-margin
+    .share-block__share-btn, .actions-block__readmore-btn
+        padding: $default-btn-padding
+        font-size: $default-font-size
+    .share-block__social-btn
+        padding: 0 $default-btn-padding
+.card_horizontal
+    .card__image-block
+        flex-basis: $image-block-width-medium
+        img
+            transform: scale($image-scale) translateX(-($image-block-gap))
+
+@media all and ( max-width: 1440px )
+    .card__short-description
+        margin-bottom: $large-margin
+        font-size: $default-font-size
+    .card__line
+        margin-bottom: $default-margin
+.card_horizontal
+    .card__image-block
+        flex-basis: $image-block-width-medium
+
+@media all and ( max-width: 1300px )
+    .card__text-content
+        padding: $large-padding
+    .card__category
+        font-size: $default-font-size
+        margin-bottom: $extra-large-margin
+    .card__header
+        margin-bottom: $extra-large-margin
+        font-size: $large-font-size
+    .card__short-description
+        margin-bottom: $extra-large-margin
+        font-size: $default-font-size
+    .card__line
+        margin-bottom: $extra-large-margin
+    .share-block__share-btn, .actions-block__readmore-btn
+        padding: $large-btn-padding
+        font-size: $large-font-size
+    .share-block__social-btn
+        padding: 0 $large-btn-padding
+
+@media all and ( max-width: 1040px )
+    .card__text-content
+        padding: $default-padding
+    .card__category
+        font-size: $default-font-size
+        margin-bottom: $large-margin
+    .card__header
+        font-size: $large-font-size
+    .card__short-description
+        font-size: $default-font-size
+    .card__line
+    .share-block__share-btn, .actions-block__readmore-btn
+        padding: $default-btn-padding
+        font-size: $medium-font-size
+    .share-block__social-btn
+        padding: $default-btn-padding
+
+@media all and ( max-width: 900px )
+    .card__category
+        font-size: $default-font-size
+    .card__header
+        margin-bottom: $extra-large-margin
+        font-size: $extra-large-font-size
+    .card__short-description
+        margin-bottom: $extra-large-margin
+        font-size: $default-font-size
+    .card__line
+        margin-bottom: $extra-large-margin
+    .share-block__share-btn, .actions-block__readmore-btn
+        padding: $large-btn-padding $small-btn-padding
+        font-size: $large-font-size
+    .share-block__social-btn
+        padding: 0 $default-btn-padding
+
+    .card_horizontal
+        flex-direction: column
+        .card__text-content
+            flex-basis: auto
+        .card__image-block
+            order: -1
+            img
+                margin: $extra-large-margin auto $small-margin
+                max-width: 400px
+        .card__image-block
+            img
+                transform: none
+
+    
+@media all and ( max-width: 700px )
+    .actions-block
+        flex-direction: column
+        .actions-block__share-block
+            margin-top: $small-margin
+            justify-content: space-between
+
+@media all and ( max-width: 400px )
+    .actions-block
+        .actions-block__share-block
+            flex-direction: column
+            justify-content: space-between
+    .share-block__share-btn
+        width: 100%
+        margin-bottom: $default-margin
+    .share-block__socials-list
+        width: 100%
+        display: flex
+        justify-content: space-between

@@ -1,0 +1,86 @@
+$image-block-width-large: 400px
+$image-block-width-medium: 350px
+$image-block-gap: 35px
+$image-scale: 110%
+
+@import '../../styles/colors.sass'
+@import '../../styles/config.sass'    
+
+.card
+    margin-bottom: $extra-large-margin
+    box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
+    background-color: $color-basic-primary
+    position: relative
+
+.card__text-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex-basis: calc(100% - #{$image-block-width-large} - #{$image-block-gap})
+    padding: $large-padding
+
+.card__category
+    display: inline-block
+    margin-bottom: $large-margin
+    color: $color-attention-primary
+    font-family: $secondary-font-family
+    font-size: $default-font-size
+    font-weight: 700
+    letter-spacing: 4px
+    text-transform: uppercase
+
+.card__header
+    color: $color-content-primary
+    font-family: $primary-font-family
+    font-size: $extra-large-font-size
+    font-weight: 400
+    margin-bottom: $extra-large-margin
+    line-height: 35px
+
+.card__line
+    height: 3px
+    opacity: .4
+    background-color: $color-content-secondary
+    margin-bottom: $extra-large-margin
+
+.card__short-description
+    color: $color-content-secondary
+    font-family: $info-font-family
+    font-size: $default-font-size
+    font-weight: 400
+    line-height: 30px
+    margin-bottom: $extra-large-margin
+
+.card__actions-block
+    display: flex
+    justify-content: space-between
+
+.actions-block
+
+    .action-block__readmore-btn
+
+    .share-block
+        display: flex
+        align-items: center
+
+        .share-block__share-btn
+            height: 100%
+
+.card__image-block
+    flex-shrink: 0
+
+.card_horizontal
+    display: flex
+    justify-content: space-between
+    .card__image-block
+        flex-basis: $image-block-width-large
+        img
+            box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
+            transform: scale($image-scale) translateX(-($image-block-gap))
+
+.card_vertical
+    .card__image-block
+        img
+            width: 100%
+
+@import './media.sass'

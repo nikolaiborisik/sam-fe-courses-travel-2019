@@ -1,60 +1,42 @@
+@import '../../styles/colors.sass'
 @import '../../styles/config.sass'
 
 .header-container
-    max-width: $header-content-width
+    max-width: 1170px
     margin: 0 auto
+    padding: $large-padding 0
+    background-color: $color-basic-primary
     .header-top
-        min-height: $header-top-height
-        background-color: $header-background-color
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 0 20px
+        padding: 0 $small-padding
+        margin-bottom: $large-margin
         .searchbar-label
             border-radius: 5px
             .searchbar-input
-                padding: 10px
+                padding: $extra-small-padding
                 border-top-left-radius: 5px
-                border-bottob-left-radius: 5px
-        .subscribe-btn
-            border-radius: 2px
-            border: 1px solid $subscribe-btn-border-color
-            padding: 15px 35px
-            font-family: Dosis
-            font-weight: 600
-            font-size: 14px
-            letter-spacing: 2.8px
-            &:hover
-                background-color: $subscribe-btn-background-color-on-hover
+                border-bottom-left-radius: 5px
     .header-nav
-        min-height: $header-nav-height
-        background-color: $navigation-background-color
         display: flex
         align-items: center
         justify-content: space-between
         position: relative
-        padding: 0 20px
-        .nav-list, .nav-socials-links-list
-            &:first-child
-                button
-                    padding-left: 0
-            &:last-child
-                button
-                    padding-right: 0
+        padding: 0 $small-padding
         
         .toggle-main-menu-label, .toggle-socials-links-label
             display: none
-            padding: 10px
+            padding: $extra-small-padding
             border-radius: 50%
             i
-                color: $default-btn-color
-                font-size: 50px
-                transition: .7s
+                color: $color-content-secondary
+                font-size: $extra-large-font-size
         .toggle-main-menu-input
             display: none
             &:checked ~ .toggle-main-menu-label
                 i
-                    color: $active-btn-color
+                    color: $color-attention-primary
                     transform: rotate(90deg)
             &:checked ~ .nav-list
                 display: block
@@ -62,7 +44,7 @@
             display: none
             &:checked ~ .toggle-socials-links-label
                 i
-                    color: $active-btn-color
+                    color: $color-attention-primary
                     transform: rotate(90deg)
             &:checked ~ .nav-socials-links-list
                 display: block

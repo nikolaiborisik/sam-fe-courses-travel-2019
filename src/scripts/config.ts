@@ -4,11 +4,3 @@ let currentPage: number = 1;
 let currentNumberOfPages: number;
 let currentCategories: string[];
 let currentTags: string[];
-export const data = {
-    baseApiURL,
-    limit,
-    currentPage,
-    currentNumberOfPages,
-    currentCategories,
-    currentTags
-};

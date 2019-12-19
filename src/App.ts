@@ -1,5 +1,6 @@
 import './styles/app.sass';
 import './scripts/services.ts'
+import './scripts/chooseCategory.ts'
 import './components/header/header.ts'
 import './components/main/main.ts'
 import  './components/aside/aside.ts'

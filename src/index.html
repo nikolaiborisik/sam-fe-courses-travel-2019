@@ -76,20 +76,33 @@
             </div>
             <div class='main-left-box left-div_shadow'>
                 <div class="aside-title">CATEGORIES</div>
-                <ul class="categories">
-                    <li>Nature</li>
-                    <li>Nightlife</li>
-                    <li>Lifestyle</li>
-                    <li>Food</li>
-                </ul>
+              <!--  <ul class="categories"> -->
+                    <form id="categoryForm">
+                         <input type="radio" name="categoryRadio" value="nature"> Nature </input> <br>
+                         <input type="radio" name="categoryRadio" value="nightlife"> Nightlife </input> <br>
+                         <input type="radio" name="categoryRadio" value="lifestyle"> Lifestyle </input> <br>
+                         <input type="radio" name="categoryRadio" value="food"> Food </input> 
+                    </form>
+              <!--  </ul>  -->
             </div>
             <div class='main-left-box left-div_shadow'>
                 <div class="aside-title">TAGS</div>
                 <div class="tags-container">
                     <div class="tags">
-                        <div class="tag-item">LIFESTYLE</div>
-                        <div class="tag-item">NATURE</div>
-                        <div class="tag-item">TREKKING</div>
+                    <!-----------------------------------------> 
+                    <form id="tagsForm">
+                        <input type="checkbox" name="tagCheckbox" value="lifestyle">LIFESTYLE</input>
+                        <input type="checkbox" name="tagCheckbox" value="nature">NATURE</input>
+                        <input type="checkbox" name="tagCheckbox" value="trekking">TREKKING</input>
+                        <input type="checkbox" name="tagCheckbox" value="travel">TRAVEL</input>
+                        <input type="checkbox" name="tagCheckbox" value="lost">LOST</input>
+                        <input type="checkbox" name="tagCheckbox" value="lifestyle">LIFESTYLE</input>
+                    </form><br>
+                    <!----------------------------------------->   
+
+                      <div class="tag-item">LIFESTYLE</div>
+                      <div class="tag-item">NATURE</div>
+                      <div class="tag-item">TREKKING</div>
                     </div>
                     <div class="tags">
                         <div class="tag-item">TRAVEL</div>

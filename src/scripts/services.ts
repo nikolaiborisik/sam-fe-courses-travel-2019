@@ -18,6 +18,7 @@ function updateInfo(data:any){
             <img src='${image? image : ''}' alt="image">
         </div>
         <div class="card__text-content">
+            <button class='btn delete-article-btn'><i class="fas fa-trash-alt"></i></button>
             <span class="card__category">${category ? category : 'unknown'}</span>
             <h2 class="card__header">${title}</h2>
             <p class="card__short-description">${shortDescription}</p>

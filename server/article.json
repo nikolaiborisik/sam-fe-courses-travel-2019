@@ -6,7 +6,8 @@
       "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
       "createDate": "10.12.2019",
       "content": "Article1_content",
-      "image": "./images/article-logo-1.png"
+      "image": "./images/article-logo-1.png",
+      "name": "nature"
     },
     {
       "id": 2,
@@ -14,15 +15,17 @@
       "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
       "createDate": "10.12.2019",
       "content": "Article2_content",
-      "image": "./images/article-logo-3.png"
+      "image": "./images/article-logo-2.png",
+      "name": "nightlife"
     },
     {
       "id": 3,
-      "title": "Lorem ipsum dolor",
+      "title": "Sport is useful?",
       "shortDescription": "Lorem ipsum dolor",
       "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
-      "image": ""
+      "image": "./images/article-logo-3.png",
+      "name": "lifestyle"
     },
     {
       "id": 4,
@@ -30,7 +33,22 @@
       "shortDescription": "Lorem ipsum dolor",
       "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
-      "image": ""
+      "image": "./images/article-logo-4.png",
+      "name": "lost"
+    },
+    {
+      "title": "Dranic",
+      "shortDescription": "dranic?",
+      "content": "",
+      "image": "./images/article-logo-5.png",
+      "id": 5,
+      "name": "food"
+    },
+    {
+      "title": "second page",
+      "shortDescription": "",
+      "content": "",
+      "id": 6
     }
   ],
   "categories": [

@@ -15,7 +15,7 @@ input
   padding: $small-btn-padding $default-btn-padding
   font-family: $primary-font-family
   font-size: $default-font-size
-  background-color: $default-btn-background-color
+  background-color: inherit
   text-transform: uppercase
   text-decoration: none
   border: none
@@ -26,62 +26,56 @@ input
   font-size: $large-font-size
   padding: $small-btn-padding $default-btn-padding
   &:hover
-      color: $navigation-btn-background-color-on-hover
+      color: $color-attention-primary
 
 .nav-btn
     padding: $small-btn-padding $default-btn-padding
     &:hover
-        color: $navigation-btn-background-color-on-hover
+        color: $color-attention-primary
 
 .subscribe-btn
     border-radius: 2px
-    border: 1px solid $subscribe-btn-border-color
+    border: 1px solid $color-attention-secondary
     letter-spacing: 2px
     font-family: $accent-font-family
     font-size: $medium-font-size
     padding: $default-btn-padding $large-btn-padding
     &:hover
-        background-color: $subscribe-btn-background-color-on-hover
+        background-color: $color-attention-secondary
 
 .readmore-btn
     font-family: $info-font-family
     padding: $small-btn-padding $large-btn-padding
-    background-color: $readmore-btn-background-color
+    // background-color: $color-attention-secondary
     &:hover
-        background-color: $readmore-btn-background-color-on-hover
+        background-color: $color-attention-primary
 
 .share-btn
     font-family: $info-font-family
     color: $share-btn-color
-    background-color: $share-btn-background-color
     &:hover
-        background-color: $share-btn-background-color-on-hover
-        color: $share-btn-color-on-hover
+        background-color: $color-content-secondary
+        color: $color-basic-secondary
 
 .nav-arrow-btn
     font-family: $info-font-family
-    color: $pagination-btn-color
-    background-color: $pagination-btn-background-color
     &:hover
-        background-color: $pagination-btn-background-color-on-hover
-        color: $pagination-btn-color-on-hover
+        background-color: $color-attention-primary
+
 .pagination-nav-btn
     font-family: $info-font-family
     padding: $extra-large-btn-padding
     border-radius: 50%
-    color: $pagination-nav-btn-color
-    background-color: $pagination-nav-btn-background-color
     &:hover
-        color: $pagination-nav-btn-background-color-on-hover
-        // background-color: $pagination-nav-btn-background-color-on-hover
+        color: $color-attention-primary
 
 .category-btn
     padding: $extra-large-btn-padding
     width: 100%
     text-align: center
-    border-bottom: 1px solid #d4d4d4
+    border-bottom: 1px solid $color-attention-secondary
     &:hover
-        background-color: $pagination-nav-btn-background-color-on-hover
+        background-color: $color-attention-primary
 
 .tag-btn
     padding: $extra-large-btn-padding
@@ -89,7 +83,7 @@ input
     width: 100%
     margin-bottom: $large-margin
     &:hover
-        background-color: $pagination-nav-btn-background-color-on-hover
+        background-color: $color-attention-primary
 
 .searchbar-btn
     display: inline-block
@@ -97,17 +91,17 @@ input
 .add-btn
     width: 100%
     &:hover
-        background-color: $pagination-nav-btn-background-color-on-hover
+        background-color: $color-attention-primary
 
 .follow-me-btn
     width: 100%
     &:hover
-        background-color: $pagination-nav-btn-background-color-on-hover
+        background-color: $color-attention-primary
 
 .btn-register
     width: 100%
     &:hover
-        background-color: $pagination-nav-btn-background-color-on-hover
+        background-color: $color-attention-primary
 
 // ------------------------------------------------------------------
 
@@ -122,12 +116,6 @@ input
   display: flex
   justify-content: center
   flex-wrap: wrap
-
-.card
-    margin-bottom: $extra-large-margin
-    box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
-    background-color: $card-background-color
-    position: relative
 
 .left-div_shadow
   box-shadow: 4px 8px 13px #d0d0d0

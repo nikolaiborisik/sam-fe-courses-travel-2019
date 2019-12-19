@@ -4,13 +4,14 @@
 .header-container
     max-width: 1170px
     margin: 0 auto
+    padding: $large-padding 0
+    background-color: $color-basic-primary
     .header-top
-        min-height: $header-top-height
-        background-color: $header-background-color
         display: flex
         align-items: center
         justify-content: space-between
         padding: 0 $small-padding
+        margin-bottom: $large-margin
         .searchbar-label
             border-radius: 5px
             .searchbar-input
@@ -18,8 +19,6 @@
                 border-top-left-radius: 5px
                 border-bottom-left-radius: 5px
     .header-nav
-        min-height: $header-nav-height
-        background-color: $navigation-background-color
         display: flex
         align-items: center
         justify-content: space-between
@@ -31,14 +30,13 @@
             padding: $extra-small-padding
             border-radius: 50%
             i
-                color: $text-color-default
+                color: $color-content-secondary
                 font-size: $extra-large-font-size
-                transition: .7s
         .toggle-main-menu-input
             display: none
             &:checked ~ .toggle-main-menu-label
                 i
-                    color: $text-color-default-active
+                    color: $color-attention-primary
                     transform: rotate(90deg)
             &:checked ~ .nav-list
                 display: block
@@ -46,7 +44,7 @@
             display: none
             &:checked ~ .toggle-socials-links-label
                 i
-                    color: $text-color-default-active
+                    color: $color-attention-primary
                     transform: rotate(90deg)
             &:checked ~ .nav-socials-links-list
                 display: block

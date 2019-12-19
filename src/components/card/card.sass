@@ -6,6 +6,12 @@ $image-scale: 110%
 @import '../../styles/colors.sass'
 @import '../../styles/config.sass'    
 
+.card
+    margin-bottom: $extra-large-margin
+    box-shadow: 0 24px 26px 3px rgba(0, 0, 0, 0.24)
+    background-color: $color-basic-primary
+    position: relative
+
 .card__text-content
     display: flex
     flex-direction: column
@@ -16,16 +22,16 @@ $image-scale: 110%
 .card__category
     display: inline-block
     margin-bottom: $large-margin
-    color: $card-category-text-color
-    font-family: Montserrat
-    font-size: $large-btn-padding
+    color: $color-attention-primary
+    font-family: $secondary-font-family
+    font-size: $default-font-size
     font-weight: 700
     letter-spacing: 4px
     text-transform: uppercase
 
 .card__header
-    color: $card-header-text-color
-    font-family: Poppins, 'Open Sans'
+    color: $color-content-primary
+    font-family: $primary-font-family
     font-size: $extra-large-font-size
     font-weight: 400
     margin-bottom: $extra-large-margin
@@ -34,11 +40,11 @@ $image-scale: 110%
 .card__line
     height: 3px
     opacity: .4
-    background-color: $card-line-color
+    background-color: $color-content-secondary
     margin-bottom: $extra-large-margin
 
 .card__short-description
-    color: #6c7374
+    color: $color-content-secondary
     font-family: $info-font-family
     font-size: $default-font-size
     font-weight: 400

@@ -48,7 +48,20 @@
       "title": "second page",
       "shortDescription": "",
       "content": "",
+      "image": "./images/article-logo-3.png",
       "id": 6
+    },
+    {
+      "title": "3",
+      "shortDescription": "",
+      "content": "",
+      "id": 7
+    },
+    {
+      "title": "idohjoistrjhoi",
+      "shortDescription": "",
+      "content": "",
+      "id": 8
     }
   ],
   "categories": [

@@ -1,12 +1,13 @@
 import { ArticleModel } from "../models/ArticleModel";
 
 const baseApiURL = "http://localhost:3000/articles";
-const limit: number = 5;
-let currUrl: string = "http://localhost:3000/articles";
+const limit: number = 3;
+let currentUrl: string = "http://localhost:3000/articles";
 let currentPage: number = 1;
-let currentNumberOfPages: number;
+let currentNumberOfPages: number = 7;
 let currentCategory: string;
 let currentTags: string[];
+
 
 let getInfoButton = document.getElementById("but");
 
@@ -35,6 +36,7 @@ function updateInfo(data:any){
     </div>`
     }
     let articleContainer = document.querySelector('.cards-container');
+    console.log(data.length);
     for (let i=0; i<data.length; i++) {
         let articleTemplateStr: string = createArticleTemplate(data[i].title, data[i].shortDescription, data[i].image, data[i].name);
         articleContainer.insertAdjacentHTML('beforeend', articleTemplateStr);
@@ -46,6 +48,7 @@ function clearArticles() {
     while(articleContainer.firstChild){
         articleContainer.removeChild(articleContainer.firstChild);
     };
+    console.log('clearArticles is work');
 }
 
 window.onload = function(){
@@ -55,19 +58,28 @@ window.onload = function(){
 
 const axios = require('axios');
 
+function showArticleContent(e: any) {
+
+}
+
 function getInfo() {      //gets info from json-server
     clearArticles();
-    let currentUrl: string = baseApiURL + `?_page=${currentPage}&_limit=${limit}`;
+    currentUrl = baseApiURL + `?_page=${currentPage}&_limit=${limit}`;
     axios.get(currentUrl).then(function(response:any) {
         updateInfo(response.data);
+        const readMoreButtons: any = document.querySelectorAll('.readmore-btn');
+        readMoreButtons.forEach(function(elem: any){
+            elem.addEventListener('click', showArticleContent);
+        })
     });
+    console.log(currentUrl);
 }
 
 export function getInfoByCateg(categ: string){
     alert("Info with categ uploaded!");
-    let tempCateg = 'nature';
-    let currentUrl: string = baseApiURL + `?_page=${currentPage}&_limit=${limit}`;
-    tempCateg? currentUrl+=`&name=${categ}`: currentUrl = currentUrl;
+    currentCategory = 'nature'; //=categ
+    currentUrl = baseApiURL + `?_page=${currentPage}&_limit=${limit}`;
+    currentCategory? currentUrl+=`&name=${categ}`: currentUrl = currentUrl;
     axios.get(currentUrl).then(function(response:any) {
         updateInfo(response.data);
     });
@@ -88,7 +100,7 @@ function numberOfPages(){
     while(paginationList.firstChild){
         paginationList.removeChild(paginationList.firstChild);
     };
-    currentNumberOfPages = Math.ceil(6/limit);
+    currentNumberOfPages = Math.ceil(currentNumberOfPages/limit);
     for(let i = 1; i <= currentNumberOfPages; ++i){
         let articleTemplateStr: string = createButttonPageTemplate(i);
         paginationList.insertAdjacentHTML('beforeend', articleTemplateStr);
@@ -112,40 +124,44 @@ function pagination(e: any){
 }
 
 
+//--------------------Add articles-------------------------
+const getArticleButton = document.querySelector('#getArticle');
 
-// //--------------------Add articles-------------------------
-// const getArticleButton = document.querySelector('#getArticle');
+const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
+const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
+const inputArticleContent: any = document.querySelector('.article-content');
+
+function postArticle(){
+  let newArticle: ArticleModel = {
+    title: inputArticleTitle.value,
+    shortDescription: inputArticleShortDescription.value,
+    content: inputArticleContent.value
+  };
+  axios.post("http://localhost:3000/articles", newArticle).then(function (response: any) {
+    inputArticleTitle.value = '';
+    inputArticleShortDescription.value = '';
+    inputArticleContent.value = '';
+    getInfo();
+  });
+}
+
+getArticleButton.addEventListener('click', postArticle);
 //
-// const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
-// const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
-// const inputArticleContent: any = document.querySelector('.article-content');
-//
-// function postArticle(){
-//   let newArticle: ArticleModel = {
-//     title: inputArticleTitle.value,
-//     shortDescription: inputArticleShortDescription.value,
-//     content: inputArticleContent.value
-//   };
-//   axios.post("http://localhost:3000/articles", newArticle).then(function (response: any) {
-//     inputArticleTitle.value = '';
-//     inputArticleShortDescription.value = '';
-//     inputArticleContent.value = '';
-//   });
-// }
-//
-// getArticleButton.addEventListener('click', postArticle);
-//
-// //----------------------remove articles--------------------------------------
-// const removeArticleButton = document.querySelector('#removeArticle');
-//
-// function removeArticle (){
-//   const inputToDelete: any = document.querySelector('.toDelete');
-//   let id: number = inputToDelete.value;
-//   axios.delete('http://localhost:3000/articles/' + id).then(function (response: any){
-//     inputToDelete.value = '';
-//     console.log('deleted');
-//   });
-// }
-//
-// removeArticleButton.addEventListener('click', removeArticle);
+//----------------------remove articles--------------------------------------
+const removeArticleButton = document.querySelector('#removeArticle');
+
+function removeArticle (){
+  const inputToDelete: any = document.querySelector('.toDelete');
+  let id: number = inputToDelete.value;
+  axios.delete('http://localhost:3000/articles/' + id).then(function (response: any){
+    inputToDelete.value = '';
+    console.log('deleted');
+    getInfo();
+  });
+}
+
+removeArticleButton.addEventListener('click', removeArticle);
+
+
+
 

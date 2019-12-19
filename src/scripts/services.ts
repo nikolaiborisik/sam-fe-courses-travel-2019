@@ -41,8 +41,19 @@ function updateInfo(data:any){
     for (let i=0; i<data.length; i++) {
         let articleTemplateStr: string = createArticleTemplate(data[i].title, data[i].shortDescription, data[i].image, data[i].name);
         articleContainer.insertAdjacentHTML('beforeend', articleTemplateStr);
+        articleContainer.querySelectorAll('.card')[i].addEventListener('click', (e:Event) => {
+            const target = e.target as HTMLButtonElement;
+            console.log(target.classList)
+            if(target.classList.contains('delete-article-btn')){
+                console.log('!')
+            }
+            
+        })
+
+        }
+        // console.log(articleContainer.querySelectorAll('.card')[i])
     }
-}
+
 
 function clearArticles() {
     let articleContainer = document.querySelector('.cards-container');
@@ -125,7 +136,7 @@ function numberOfPages(){
 //change current page, get articles from current page
 function pagination(e: Event){
     e.preventDefault();
-    e.stopPropagation();
+    // e.stopPropagation();
     console.log('!');
     const pageButtons: any = document.querySelectorAll('.pagination-nav-btn'); //????????????????
     let clickedPage = e.target as HTMLInputElement;

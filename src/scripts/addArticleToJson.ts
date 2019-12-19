@@ -1,14 +1,13 @@
 import {postArticle} from "./services";
-import {getInfo} from "./allFunctions";
+import {onGetInfo} from "./getInfo";
+
 
 //--------------------Add articles-------------------------
-const getArticleButton = document.querySelector('#getArticle');
-getArticleButton.addEventListener('click', onPostArticle);
-
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
 const inputArticleContent: any = document.querySelector('.article-content');
 
+const getArticleButton = document.querySelector('#getArticle');
 function onPostArticle(){
     postArticle({
         title: inputArticleTitle.value,
@@ -18,8 +17,9 @@ function onPostArticle(){
         inputArticleTitle.value = '';
         inputArticleShortDescription.value = '';
         inputArticleContent.value = '';
-        getInfo();
+        onGetInfo();
     })
 }
+getArticleButton.addEventListener('click', onPostArticle);
 
 

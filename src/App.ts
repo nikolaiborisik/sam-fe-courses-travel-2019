@@ -2,7 +2,10 @@ import './styles/app.sass';
 
 import './scripts/services.ts'
 import './scripts/allFunctions.ts'
-import './scripts/addArticleToJson'
+import './scripts/addArticleToJson.ts'
+import './scripts/removeArticles.ts'
+import './scripts/pagination.ts'
+
 
 import './scripts/chooseCategory.ts'
 

@@ -1,5 +1,5 @@
 import { ArticleModel } from "../models/ArticleModel";
-import {postArticle} from "./addArticleToJson";
+//import {postArticle} from "./addArticleToJson";
 
 const baseApiURL = "http://localhost:3000/articles";
 const limit: number = 3;
@@ -131,6 +131,14 @@ const getArticleButton = document.querySelector('#getArticle');
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
 const inputArticleContent: any = document.querySelector('.article-content');
+
+//const axios = require('axios');
+//--------------------Add articles-------------------------
+//import {ArticleModel} from "../models/ArticleModel";
+
+export function postArticle(newArticle:ArticleModel){
+    return axios.post(`${baseApiURL}/articles`, newArticle);
+}
 
 function onPostArticle(){
   postArticle({

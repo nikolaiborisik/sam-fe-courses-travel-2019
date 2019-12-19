@@ -10,7 +10,7 @@
     <title>sam-fe-courses-travel-2019</title>
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container" id='header'>
         <div class="header-top">
             <label class="searchbar-label">
                 <input type="text" class="searchbar-input" placeholder="Search and hit enter">
@@ -44,7 +44,7 @@
             </ul>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id='main'>
         <section class="main-aside">
             <div class='main-left-box left-div_shadow map-box'>
                 <h2 class="aside-title">WHERE AM I</h2>
@@ -76,7 +76,7 @@
             </div>
             <div class='main-left-box left-div_shadow'>
                 <h2 class="aside-title">CATEGORIES</h2>
-                <form id="categoryForm">
+                <form id="categoryForm" class='categoryForm'>
                     <ul class="categories">
                         <li><input type="radio" value="nature" name='categoryRadio' id='nature-category' class='categories-input'><label class="btn category-btn" for='nature-category'>Nature</label></li>
                         <li><input type="radio" value="nightlife" name='categoryRadio' id='nightlife-category' class='categories-input'><label class="btn category-btn" for='nightlife-category'>Nightlife</label></li>
@@ -87,7 +87,7 @@
             </div>
             <div class='main-left-box left-div_shadow'>
                 <h2 class="aside-title">TAGS</h2>
-                  <form id="tagsForm">
+                  <form id="tagsForm" class='tagsForm'>
                     <ul class="list tags-container">
                         <li class="tag-item"><input type='checkbox' value="nature" name='tagCheckbox' class='tag-input' id='nature-tag'><label class="btn tag-btn" for='nature-tag'>NATURE</label></li>
                         <li class="tag-item"><input type='checkbox' value="trekking" name='tagCheckbox' class='tag-input' id='trekking-tag'><label class="btn tag-btn" for='trekking-tag'>TREKKING</label></li>
@@ -125,7 +125,7 @@
         </section>
         <section class="articles">
             <div class="cards-container">
-                <div class="card card_horizontal">
+                <!-- <div class="card card_horizontal">
                     <div class="card__text-content">
                         <span class="card__category">night life</span>
                         <h2 class="card__header">Written in the stars, Million miles away!</h2>
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             
                 <nav class="pagination">
@@ -236,7 +236,7 @@
                     <li><button class="btn nav-btn footer-nav-btn">contact</button></li>
                 </ul>
             </nav>
-            <button class="btn back-to-top-btn"><i class="fas fa-arrow-up"></i></button>
+            <a class="btn back-to-top-btn" href='#header'><i class="fas fa-arrow-up"></i></a>
         </section>
         <section class="designed-by">
             <p>TravelGram   Designed  By  Navin Chandra Gupta</p>

@@ -1,4 +1,5 @@
 import { ArticleModel } from "../models/ArticleModel";
+//import {postArticle} from "./addArticleToJson";
 
 const baseApiURL = "http://localhost:3000/articles";
 const limit: number = 3;
@@ -146,21 +147,28 @@ const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-tit
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
 const inputArticleContent: any = document.querySelector('.article-content');
 
-function postArticle(){
-  let newArticle: ArticleModel = {
-    title: inputArticleTitle.value,
-    shortDescription: inputArticleShortDescription.value,
-    content: inputArticleContent.value
-  };
-  axios.post("http://localhost:3000/articles", newArticle).then(function (response: any) {
-    inputArticleTitle.value = '';
-    inputArticleShortDescription.value = '';
-    inputArticleContent.value = '';
-    getInfo();
-  });
+//const axios = require('axios');
+//--------------------Add articles-------------------------
+//import {ArticleModel} from "../models/ArticleModel";
+
+export function postArticle(newArticle:ArticleModel){
+    return axios.post(`${baseApiURL}/articles`, newArticle);
 }
 
-getArticleButton.addEventListener('click', postArticle);
+function onPostArticle(){
+  postArticle({
+      title: inputArticleTitle.value,
+      shortDescription: inputArticleShortDescription.value,
+      content: inputArticleContent.value
+  }).then(()=>{
+      inputArticleTitle.value = '';
+      inputArticleShortDescription.value = '';
+      inputArticleContent.value = '';
+      getInfo();
+  })
+}
+
+getArticleButton.addEventListener('click', onPostArticle);
 //
 //----------------------remove articles--------------------------------------
 const removeArticleButton = document.querySelector('#removeArticle');

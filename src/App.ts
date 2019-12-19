@@ -2,6 +2,8 @@ import './styles/app.sass';
 
 import './scripts/services.ts'
 import './scripts/allFunctions.ts'
+import './scripts/addArticleToJson'
+
 import './scripts/chooseCategory.ts'
 
 import './components/card/card.ts'

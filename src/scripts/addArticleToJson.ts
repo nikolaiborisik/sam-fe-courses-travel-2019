@@ -3,6 +3,7 @@ import {getInfo} from "./allFunctions";
 
 //--------------------Add articles-------------------------
 const getArticleButton = document.querySelector('#getArticle');
+getArticleButton.addEventListener('click', onPostArticle);
 
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
@@ -21,5 +22,4 @@ function onPostArticle(){
     })
 }
 
-getArticleButton.addEventListener('click', onPostArticle);
 

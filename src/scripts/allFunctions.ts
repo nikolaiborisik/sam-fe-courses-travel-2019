@@ -1,13 +1,15 @@
 import { ArticleModel } from "../models/ArticleModel";
 import {postArticle} from "./services";
+import {baseApiURL} from "./config";
 
-const baseApiURL = "http://localhost:3000/articles";
+//const baseApiURL = "http://localhost:3000/articles";
 const limit: number = 3;
 let currentUrl: string = "http://localhost:3000/articles";
 let currentPage: number = 1;
 let currentNumberOfPages: number = 7;
 let currentCategory: string;
 let currentTags: string[];
+
 
 window.onload = function(){
     getInfo();

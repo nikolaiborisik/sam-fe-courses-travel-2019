@@ -7,7 +7,7 @@
       "createDate": "10.12.2019",
       "content": "Article1_content",
       "image": "./images/article-logo-1.png",
-      "name": "nature"
+      "category": "nature"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "createDate": "10.12.2019",
       "content": "Article2_content",
       "image": "./images/article-logo-2.png",
-      "name": "nightlife"
+      "category": "nightlife"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
       "image": "./images/article-logo-3.png",
-      "name": "lifestyle"
+      "category": "lifestyle"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
       "image": "./images/article-logo-4.png",
-      "name": "lost"
+      "category": "food"
     },
     {
       "title": "Dranic",
@@ -42,14 +42,21 @@
       "content": "",
       "image": "./images/article-logo-5.png",
       "id": 5,
-      "name": "food"
+      "category": "food"
     },
     {
-      "title": "second page",
-      "shortDescription": "",
-      "content": "",
-      "image": "./images/article-logo-3.png",
-      "id": 6
+      "title": "six article",
+      "shortDescription": "Six?",
+      "content": "Some text",
+      "id": 6,
+      "category": "food"
+    },
+    {
+      "title": "7 article",
+      "shortDescription": "7?",
+      "content": "Some text",
+      "id": 7,
+      "category": "food"
     }
   ],
   "categories": [

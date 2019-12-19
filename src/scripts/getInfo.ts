@@ -1,11 +1,10 @@
-import {axios, baseApiURL, limit} from "./config";
-import {getInfoByCurrentPage} from "./services";
+import {getInfo} from "./services";
 import {currentPage} from "./pagination";
+import {currentCategory} from "./chooseCategory";
 
-let getInfoButton = document.getElementById("but");
 export function onGetInfo() {      //gets info from json-server
     clearArticles();
-    getInfoByCurrentPage(currentPage).then(function(response:any) {
+    getInfo(currentPage, currentCategory).then(function(response:any) {
         updateInfo(response.data);
         const readMoreButtons: any = document.querySelectorAll('.readmore-btn');
         readMoreButtons.forEach(function(elem: any){
@@ -46,7 +45,7 @@ function updateInfo(data:any){
     }
     let articleContainer = document.querySelector('.cards-container');
     for (let i=0; i<data.length; i++) {
-        let articleTemplateStr: string = createArticleTemplate(data[i].title, data[i].shortDescription, data[i].image, data[i].name);
+        let articleTemplateStr: string = createArticleTemplate(data[i].title, data[i].shortDescription, data[i].image, data[i].category);
         articleContainer.insertAdjacentHTML('beforeend', articleTemplateStr);
     }
 }
@@ -58,5 +57,3 @@ function clearArticles() {
     };
     console.log('clearArticles is work');
 }
-
-getInfoButton.addEventListener('click', onGetInfo);

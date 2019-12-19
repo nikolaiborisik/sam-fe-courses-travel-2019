@@ -2,8 +2,9 @@
 
 //count number of pages, create buttons for pages
 import {limit} from "./config";
-import {getArticles, getInfoByCurrentPage} from "./services";
+import {getArticles} from "./services";
 import {onGetInfo} from "./getInfo";
+import {currentCategory} from "./chooseCategory";
 
 export let currentPage: number = 1;
 let currentNumberOfPages: number;
@@ -14,7 +15,7 @@ let createButttonPageTemplate = (value: number) => {
 }
 
 export function numberOfPages(){
-    getArticles().then((response: any)=>{
+    getArticles(currentCategory).then((response: any)=>{
         numberOfArticles = response.data.length;
         console.log(`setNum=${numberOfArticles}`);
         let paginationList = document.querySelector('.pagination__list');

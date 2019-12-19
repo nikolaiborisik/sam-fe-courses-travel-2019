@@ -1,8 +1,6 @@
 import {postArticle} from "./services";
 import {onGetInfo} from "./getInfo";
 
-
-//--------------------Add articles-------------------------
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
 const inputArticleContent: any = document.querySelector('.article-content');

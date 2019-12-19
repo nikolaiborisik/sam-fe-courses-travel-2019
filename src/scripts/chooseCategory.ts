@@ -39,7 +39,7 @@ function getTags() {
     //   }
 
    }
-    alert(tagsValue);
+    // alert(tagsValue);
 
 }
 

@@ -1,6 +1,6 @@
 import {removeArticle} from "./services";
 import {onGetInfo} from "./getInfo";
-import {currentPage} from "./pagination";
+import {currentPage, numberOfPages} from "./pagination";
 import {currentCategory} from "./chooseCategory";
 
 //----------------------remove articles--------------------------------------
@@ -14,9 +14,7 @@ export function onRemoveArticle (event: any){
     const card: HTMLElement = target.closest('.card');
     const id: String = card.id;
     removeArticle(+id).then(function (response: any){
-        console.log('deleted');
-        console.log(currentPage);
-        console.log(currentCategory);
         onGetInfo();
+        numberOfPages();
     });
 }

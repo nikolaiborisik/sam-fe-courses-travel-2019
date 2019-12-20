@@ -45,28 +45,22 @@
       "category": "food"
     },
     {
-      "title": "66",
-      "shortDescription": "66",
-      "content": "6",
+      "title": "1",
+      "shortDescription": "",
+      "content": "",
       "id": 6
     },
     {
-      "title": "7",
-      "shortDescription": "77",
-      "content": "7",
+      "title": "2",
+      "shortDescription": "",
+      "content": "",
       "id": 7
     },
     {
       "title": "3",
-      "shortDescription": "33",
-      "content": "3",
+      "shortDescription": "",
+      "content": "",
       "id": 8
-    },
-    {
-      "title": "9",
-      "shortDescription": "9",
-      "content": "9",
-      "id": 9
     }
   ],
   "categories": [

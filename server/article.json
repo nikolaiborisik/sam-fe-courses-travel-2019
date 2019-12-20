@@ -6,8 +6,8 @@
       "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
       "createDate": "10.12.2019",
       "content": "Article1_content",
-      "image": "./images/article-logo-1.png",
-      "category": "nature"
+      "image": "./images/article-logo-6.png",
+      "category": "nature"       
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
       "createDate": "10.12.2019",
       "content": "Article2_content",
-      "image": "./images/article-logo-2.png",
+      "image": "./images/article-logo-9.png",
       "category": "nightlife"
     },
     {
@@ -33,29 +33,31 @@
       "shortDescription": "Lorem ipsum dolor",
       "createDate": "10.12.2019",
       "content": "Lorem ipsum dolor",
-      "image": "./images/article-logo-4.png",
+      "image": "./images/article-logo-11.png",
       "category": "food"
     },
     {
+      "id": 5,
       "title": "Dranic",
       "shortDescription": "dranic?",
       "content": "",
-      "image": "./images/article-logo-5.png",
-      "id": 5,
+      "image": "./images/article-logo-8.jpg",
       "category": "food"
     },
     {
+      "id": 6,
       "title": "six article",
       "shortDescription": "Six?",
       "content": "Some text",
-      "id": 6,
+      "image": "./images/article-logo-1.png",
       "category": "food"
     },
     {
+      "id": 7,
       "title": "7 article",
       "shortDescription": "7?",
       "content": "Some text",
-      "id": 7,
+      "image": "./images/article-logo-7.jpg",
       "category": "food"
     }
   ],
@@ -71,41 +73,6 @@
     },
     {
       "name": "food"
-    }
-  ],
-  "tags": [
-    {
-      "name": "nature"
-    },
-    {
-      "name": "travel"
-    },
-    {
-      "name": "lifestyle"
-    },
-    {
-      "name": "lost"
-    },
-    {
-      "name": "trekking"
-    }
-  ],
-  "articleTags": [
-    {
-      "articleId": 1,
-      "tag": "nature"
-    },
-    {
-      "articleId": 2,
-      "tag": "nightlife"
-    },
-    {
-      "articleId": 3,
-      "tag": "nightlife"
-    },
-    {
-      "articleId": 4,
-      "tag": "nightlife"
     }
   ]
 }

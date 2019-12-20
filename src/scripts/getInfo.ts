@@ -42,7 +42,7 @@ function updateInfo(data:any){
     let createArticleTemplate = (id: number, title: string, shortDescription: string, image: string, category?: string) => {
         return `<div class="card card_vertical" id='${id}'>
         <div class="card__image-block">
-            <img src='${image? image : ''}' alt="image">
+            <img src='${image ? image : './images/not-found.jpg'}' alt="image">
         </div>
         <div class="card__text-content">
             <button class='btn delete-article-btn'><i class="fas fa-trash-alt"></i></button>

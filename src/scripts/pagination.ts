@@ -85,3 +85,7 @@ function pagination(e: Event){
 export function removeCurrentPage() {
     currentPage = 0;
 }
+
+export function setCurrentPage(page: number){
+    currentPage = page;
+}

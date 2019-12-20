@@ -12,7 +12,7 @@ export function onGetInfo() {      //gets info from json-server
             elem.addEventListener('click', toggleArticleContent);
         })
         const removeArticleButtons: any = document.querySelectorAll('.delete-article-btn');
-        removeArticleButtons.forEach(function(elem: any){
+        removeArticleButtons.forEach(function(elem: HTMLButtonElement){
             elem.addEventListener('click', onRemoveArticle);
         })
     });

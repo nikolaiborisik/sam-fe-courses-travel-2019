@@ -1,4 +1,4 @@
-import {getInfo} from "./services";
+import {getInfo, getArticlesById} from "./services";
 import {currentPage} from "./pagination";
 import {currentCategory} from "./chooseCategory";
 
@@ -6,21 +6,37 @@ export function onGetInfo() {      //gets info from json-server
     clearArticles();
     getInfo(currentPage, currentCategory).then(function(response:any) {
         updateInfo(response.data);
-        const readMoreButtons: any = document.querySelectorAll('.readmore-btn');
-        readMoreButtons.forEach(function(elem: any){
-            elem.addEventListener('click', showArticleContent);
+        const readMoreButtons: NodeList = document.querySelectorAll('.readmore-btn');
+        readMoreButtons.forEach(function(elem: HTMLButtonElement){
+            elem.addEventListener('click', toggleArticleContent);
         })
     });
 
 }
 
-function showArticleContent(e: any) {
+function toggleArticleContent(e: Event) {
+    const target = e.target as HTMLButtonElement;
+    const card: HTMLElement = target.closest('.card')
+    const descriptionElement: HTMLElement = card.querySelector('.card__short-description');
+    const id: String = target.closest('.card').id;
 
+    card.classList.toggle('fullTextActive');
+
+    getArticlesById(+id).then((response: any) => {
+        const currentArticle = response.data[0];
+        if(card.classList.contains('fullTextActive')){
+            target.innerHTML = 'back';
+            descriptionElement.innerHTML = currentArticle.content || 'not found';
+        } else {
+            target.innerHTML = 'readmore';
+            descriptionElement.innerHTML = currentArticle.shortDescription;
+        }
+    })
 }
 
 function updateInfo(data:any){
-    let createArticleTemplate = (title: string, shortDescription: string, image: string, category?: string) => {
-        return `<div class="card card_vertical">
+    let createArticleTemplate = (id: number, title: string, shortDescription: string, image: string, category?: string) => {
+        return `<div class="card card_vertical" id='${id}'>
         <div class="card__image-block">
             <img src='${image? image : ''}' alt="image">
         </div>
@@ -45,7 +61,7 @@ function updateInfo(data:any){
     }
     let articleContainer = document.querySelector('.cards-container');
     for (let i=0; i<data.length; i++) {
-        let articleTemplateStr: string = createArticleTemplate(data[i].title, data[i].shortDescription, data[i].image, data[i].category);
+        let articleTemplateStr: string = createArticleTemplate(data[i].id, data[i].title, data[i].shortDescription, data[i].image, data[i].category);
         articleContainer.insertAdjacentHTML('beforeend', articleTemplateStr);
     }
 }

@@ -9,11 +9,16 @@ export function removeArticle(id: number) {
     return axios.delete('http://localhost:3000/articles/' + id);
 }
 
-export function getArticles(categ?: string) {
+export function getArticles(categ?: string) { // by categ
     let currentUrl: string = `${baseApiURL}/articles`;
     if(categ){
         currentUrl+=`?category=${categ}`
     }
+    return axios.get(currentUrl);
+}
+
+export function getArticlesById(id: number) {
+    let currentUrl: string = `${baseApiURL}/articles?id=${id}`;
     return axios.get(currentUrl);
 }
 

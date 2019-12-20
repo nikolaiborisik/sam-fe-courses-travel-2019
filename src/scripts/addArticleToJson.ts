@@ -1,5 +1,6 @@
 import {postArticle} from "./services";
 import {onGetInfo} from "./getInfo";
+import {numberOfPages} from "./pagination";
 
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
@@ -16,6 +17,7 @@ function onPostArticle(){
         inputArticleShortDescription.value = '';
         inputArticleContent.value = '';
         onGetInfo();
+        numberOfPages();
     })
 }
 getArticleButton.addEventListener('click', onPostArticle);

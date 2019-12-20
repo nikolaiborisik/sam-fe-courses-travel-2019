@@ -16,7 +16,6 @@ export function onGetInfo() {      //gets info from json-server
             elem.addEventListener('click', onRemoveArticle);
         })
     });
-
 }
 
 function showArticleContent(e: any) {

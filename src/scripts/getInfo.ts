@@ -16,9 +16,9 @@ export function onGetInfo() {      //gets info from json-server
 
 function toggleArticleContent(e: Event) {
     const target = e.target as HTMLButtonElement;
-    const card: HTMLElement = target.closest('.card')
+    const card: HTMLElement = target.closest('.card');
+    const id: String = card.id;
     const descriptionElement: HTMLElement = card.querySelector('.card__short-description');
-    const id: String = target.closest('.card').id;
 
     card.classList.toggle('fullTextActive');
 

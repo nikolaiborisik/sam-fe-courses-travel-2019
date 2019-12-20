@@ -30,8 +30,13 @@ export function numberOfPages(){
             paginationList.insertAdjacentHTML('beforeend', articleTemplateStr);
         }
 
-        const pageButtons: any = document.querySelectorAll('.pagination-nav-btn');
-        pageButtons.forEach(function(elem: any){
+        const pageButtons: NodeList = document.querySelectorAll('.pagination-nav-btn');
+        pageButtons.forEach(function(elem: HTMLButtonElement){
+            elem.addEventListener('click', pagination);
+        })
+
+        const nextPrevButtons: NodeList = document.querySelectorAll('.prev-btn, .next-btn');
+        nextPrevButtons.forEach(function(elem: HTMLButtonElement){
             elem.addEventListener('click', pagination);
         })
     })
@@ -41,13 +46,38 @@ export function numberOfPages(){
 function pagination(e: Event){
     e.preventDefault();
     e.stopPropagation();
-    const pageButtons: any = document.querySelectorAll('.pagination-nav-btn'); //????????????????
-    let clickedPage = e.target as HTMLInputElement;
-    currentPage = Number(clickedPage.value);
+    const clickedBtn = e.target as HTMLButtonElement;
+    const pageButtons: NodeList = document.querySelectorAll('.pagination-nav-btn');
     pageButtons.forEach(function(elem: any){
         elem.classList.remove('btn-activePage');
     })
-    clickedPage.classList.add('btn-activePage');
+
+    console.log(currentNumberOfPages)
+
+    if(clickedBtn.classList.contains('prev-btn')){
+        if(currentPage > 1){
+            currentPage -= 1;
+        }
+        pageButtons.forEach((btn: HTMLButtonElement) => {
+            if(+btn.value === currentPage){
+                btn.classList.add('btn-activePage');
+            }
+        })
+
+    } else if(clickedBtn.classList.contains('next-btn')) {
+        if(currentPage < currentNumberOfPages){
+            currentPage += 1;
+        }
+        pageButtons.forEach((btn: HTMLButtonElement) => {
+            if(+btn.value === currentPage){
+                btn.classList.add('btn-activePage');
+            }
+        })
+    } else {
+        currentPage = Number(clickedBtn.value);
+        clickedBtn.classList.add('btn-activePage');
+    }
+    
     onGetInfo();
     window.scrollTo(0, 0);
 }

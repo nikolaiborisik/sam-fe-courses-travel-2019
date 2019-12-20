@@ -13,23 +13,3 @@ function getCategory() {
    numberOfPages();
 }
 
-//------------------------------------------------------------
-let tagsForm = <HTMLFormElement>document.getElementById("tagsForm");
-let tagCheckbox = <HTMLInputElement><unknown>document.getElementsByName("tagCheckbox");
-let tagsValue: string;
-
-tagsForm.addEventListener('click', getTags);
-
-function getTags() {
-   // tagsValue = tagsForm.tagCheckbox.value;
-   for (let i=0; i<tagsForm.length; i++) {
-    //   if (tagsForm[i].checked) {
-    //       arrayTags =
-    //   }
-
-   }
-    // alert(tagsValue);
-
-}
-
-

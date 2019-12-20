@@ -1,6 +1,6 @@
 import {postArticle} from "./services";
 import {onGetInfo} from "./getInfo";
-import {numberOfPages} from "./pagination";
+import {numberOfPages, setCurrentPage} from "./pagination";
 
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
 const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
@@ -16,6 +16,7 @@ function onPostArticle(){
         inputArticleTitle.value = '';
         inputArticleShortDescription.value = '';
         inputArticleContent.value = '';
+        setCurrentPage(1);
         onGetInfo();
         numberOfPages();
     })

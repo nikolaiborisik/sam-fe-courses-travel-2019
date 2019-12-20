@@ -28,35 +28,6 @@
       "category": "lifestyle"
     },
     {
-      "id": 4,
-      "title": "Lorem ipsum dolor",
-      "shortDescription": "Lorem ipsum dolor",
-      "createDate": "10.12.2019",
-      "content": "Lorem ipsum dolor",
-      "image": "./images/article-logo-4.png",
-      "category": "food"
-    },
-    {
-      "title": "Dranic",
-      "shortDescription": "dranic?",
-      "content": "",
-      "image": "./images/article-logo-5.png",
-      "id": 5,
-      "category": "food"
-    },
-    {
-      "title": "1",
-      "shortDescription": "",
-      "content": "",
-      "id": 6
-    },
-    {
-      "title": "2",
-      "shortDescription": "",
-      "content": "",
-      "id": 7
-    },
-    {
       "title": "3",
       "shortDescription": "",
       "content": "",

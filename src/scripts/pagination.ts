@@ -79,7 +79,6 @@ function pagination(e: Event){
     }
     
     onGetInfo();
-    window.scrollTo(0, 0);
 }
 
 export function removeCurrentPage() {

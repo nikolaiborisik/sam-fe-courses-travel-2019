@@ -16,6 +16,7 @@ export function onGetInfo() {      //gets info from json-server
             elem.addEventListener('click', onRemoveArticle);
         })
     });
+    window.scrollTo(0, 0);
 }
 
 function toggleArticleContent(e: Event) {

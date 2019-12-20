@@ -17,13 +17,11 @@ let createButttonPageTemplate = (value: number) => {
 export function numberOfPages(){
     getArticles(currentCategory).then((response: any)=>{
         numberOfArticles = response.data.length;
-        console.log(`setNum=${numberOfArticles}`);
         let paginationList = document.querySelector('.pagination__list');
         while(paginationList.firstChild){
             paginationList.removeChild(paginationList.firstChild);
         };
         currentNumberOfPages = Math.ceil(numberOfArticles/limit);
-        console.log(`currentNumberOfPages=${currentNumberOfPages}`);
 
         for(let i = 1; i <= currentNumberOfPages; ++i){ //create buttons
             let articleTemplateStr: string = createButttonPageTemplate(i);
@@ -52,7 +50,6 @@ function pagination(e: Event){
         elem.classList.remove('btn-activePage');
     })
 
-    console.log(currentNumberOfPages)
 
     if(clickedBtn.classList.contains('prev-btn')){
         if(currentPage > 1){

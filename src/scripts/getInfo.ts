@@ -11,7 +11,7 @@ export function onGetInfo() {      //gets info from json-server
         readMoreButtons.forEach(function(elem: HTMLButtonElement){
             elem.addEventListener('click', toggleArticleContent);
         })
-        const removeArticleButtons: any = document.querySelectorAll('.delete-article-btn');
+        const removeArticleButtons: NodeList = document.querySelectorAll('.delete-article-btn');
         removeArticleButtons.forEach(function(elem: HTMLButtonElement){
             elem.addEventListener('click', onRemoveArticle);
         })
@@ -76,5 +76,4 @@ function clearArticles() {
     while(articleContainer.firstChild){
         articleContainer.removeChild(articleContainer.firstChild);
     };
-    console.log('clearArticles is work');
 }

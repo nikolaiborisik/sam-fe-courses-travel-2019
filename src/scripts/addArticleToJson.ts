@@ -3,8 +3,8 @@ import {onGetInfo} from "./getInfo";
 import {numberOfPages, setCurrentPage} from "./pagination";
 
 const inputArticleTitle = document.querySelector<HTMLInputElement>('.article-title');
-const inputArticleShortDescription: any = document.querySelector('.article-shortDescription');
-const inputArticleContent: any = document.querySelector('.article-content');
+const inputArticleShortDescription: HTMLInputElement = document.querySelector('.article-shortDescription');
+const inputArticleContent: HTMLInputElement = document.querySelector('.article-content');
 
 const getArticleButton = document.querySelector('#getArticle');
 function onPostArticle(){

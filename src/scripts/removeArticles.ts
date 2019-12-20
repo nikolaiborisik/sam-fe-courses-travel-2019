@@ -1,7 +1,6 @@
 import {removeArticle} from "./services";
 import {onGetInfo} from "./getInfo";
-import {currentPage, numberOfPages, setCurrentPage} from "./pagination";
-import {currentCategory} from "./chooseCategory";
+import {numberOfPages, setCurrentPage} from "./pagination";
 
 //----------------------remove articles--------------------------------------
 

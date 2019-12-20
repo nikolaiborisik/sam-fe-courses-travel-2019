@@ -6,7 +6,9 @@ export function postArticle(newArticle:ArticleModel){
 }
 
 export function removeArticle(id: number) {
-    axios.delete(`${baseApiURL}/articles?id=${id}`);
+    console.log('deleted1');
+    return axios.delete(`${baseApiURL}/articles?id=${id}`);
+    console.log('deleted2');
 }
 
 export function getArticles(categ?: string) { // by categ

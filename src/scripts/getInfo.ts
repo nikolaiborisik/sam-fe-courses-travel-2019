@@ -1,6 +1,7 @@
 import {getInfo} from "./services";
 import {currentPage} from "./pagination";
 import {currentCategory} from "./chooseCategory";
+import {onRemoveArticle} from "./removeArticles";
 
 export function onGetInfo() {      //gets info from json-server
     clearArticles();
@@ -9,6 +10,10 @@ export function onGetInfo() {      //gets info from json-server
         const readMoreButtons: any = document.querySelectorAll('.readmore-btn');
         readMoreButtons.forEach(function(elem: any){
             elem.addEventListener('click', showArticleContent);
+        })
+        const removeArticleButtons: any = document.querySelectorAll('.delete-article-btn');
+        removeArticleButtons.forEach(function(elem: any){
+            elem.addEventListener('click', onRemoveArticle);
         })
     });
 

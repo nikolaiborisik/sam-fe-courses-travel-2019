@@ -10,13 +10,13 @@ import {currentCategory} from "./chooseCategory";
 // })
 export function onRemoveArticle (event: any){
     //let id: number = event.target;
-    const target = event.target as HTMLElement;
+    const target = event.target as HTMLButtonElement;
     const card: HTMLElement = target.closest('.card');
     const id: String = card.id;
-    removeArticle(+id);
-
-    console.log('deleted');
-    console.log(currentPage);
-    console.log(currentCategory);
-    onGetInfo();
+    removeArticle(+id).then(function (response: any){
+        console.log('deleted');
+        console.log(currentPage);
+        console.log(currentCategory);
+        onGetInfo();
+    });
 }

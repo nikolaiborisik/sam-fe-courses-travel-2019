@@ -1,15 +1,16 @@
 import {removeArticle} from "./services";
 import {onGetInfo} from "./getInfo";
+import {numberOfPages, setCurrentPage} from "./pagination";
 
 //----------------------remove articles--------------------------------------
-const removeArticleButton = document.querySelector('#removeArticle');
-function onRemoveArticle (){
-    const inputToDelete: any = document.querySelector('.toDelete');
-    let id: number = inputToDelete.value;
-    removeArticle(id).then(function (response: any){
-        inputToDelete.value = '';
-        console.log('deleted');
+
+export function onRemoveArticle (event: any){
+    const target = event.target as HTMLButtonElement;
+    const card: HTMLElement = target.closest('.card');
+    const id: String = card.id;
+    removeArticle(+id).then(function (response: any){
+        setCurrentPage(1);
         onGetInfo();
+        numberOfPages();
     });
 }
-removeArticleButton.addEventListener('click', onRemoveArticle);

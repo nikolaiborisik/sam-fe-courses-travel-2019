@@ -9,6 +9,10 @@ export function removeArticle(id: number) {
     return axios.delete(`${baseApiURL}/articles/` + id);
 }
 
+let createButttonPageTemplate = (value: number) => {
+    return value===1? `<li><button class="btn btn_sm pagination-nav-btn btn-activePage" value="${value}">${value}</button></li>`: `<li><button class="btn btn_sm pagination-nav-btn" value="${value}">${value}</button></li>`
+}
+
 export function getArticles(categ?: string) { // by categ
     let currentUrl: string = `${baseApiURL}/articles`;
     if(categ){

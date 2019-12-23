@@ -46,7 +46,7 @@ function pagination(e: Event){
     e.stopPropagation();
     const clickedBtn = e.target as HTMLButtonElement;
     const pageButtons: NodeList = document.querySelectorAll('.pagination-nav-btn');
-    pageButtons.forEach(function(elem: any){
+    pageButtons.forEach(function(elem: HTMLButtonElement){
         elem.classList.remove('btn-activePage');
     })
 

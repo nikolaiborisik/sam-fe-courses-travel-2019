@@ -5,50 +5,59 @@
       "title": "Written in the stars, Million miles away!",
       "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
       "createDate": "10.12.2019",
-      "content": "Article1_content",
-      "image": "./images/article-logo-1.png",
-      "category": "nature"
+      "content": "A high degree of autonomy is particularly desirable in fields such as space exploration to support that either one is more beneficial. Your mother might scold you for having raw food, while a nutritionist might tell you to have raw food. Many implications come with eating both, cooked and raw food, and your gut processes food differently depending on whether it is raw or cooked. <br>In this article we will examine which type of food is better for the gut, but before getting to that, let us look at some of the more general implications. Raw food is eaten in its natural state, so it might contain dangerous microorganisms that are eliminated by cooking. Consuming these microorganisms may lead to food-borne illnesses that lead to symptoms like vomiting, fever, diarrhoea, and abdominal pain. Catching an illness is one of the major concerns of eating raw food. Cooked food on the other hand is safe to consume since most microorganisms cannot survive in high temperatures, thus eliminating the risk of contamination. It is also easier to chew and digest. On the flipside, cooking food is said to destroy water soluble vitamins and enzymes. Vitamins like C and B are easily lost during the process of cooking by as much as 50-60%, while fat soluble vitamins like D, E, and K are unaffected. This leads some to believe that raw food might be richer in nutrients than cooked food. Digestive enzymes help in breaking down food into molecules so that it can be absorbed. Since enzymes are heat sensitive, they get deactivated easily when food is cooked, making it harder for your body to digest.",
+      "image": "./images/article-logo-6.png",
+      "category": "nature"       
     },
     {
       "id": 2,
       "title": "The Vermont Delegation Mourns the Sanders Campaign",
-      "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
+      "shortDescription": "Was it Opposite Day at Liberty University? Here was Bernie Sanders, who spent...",
       "createDate": "10.12.2019",
-      "content": "Article2_content",
-      "image": "./images/article-logo-2.png",
+      "content": "Was it Opposite Day at Liberty University? Here was Bernie Sanders, who spent his 20s preaching sexual liberation and social revolution, taking the stage to speak to a student body of fresh-faced Christian conservatives at the school founded by televangelist Jerry Falwell. Liberty students pay a $25 fine for “attendance at a dance” and $50 for “visiting alone” off campus with a member of the opposite sex. At 74, Sanders was an old man among young people, a self-described “democratic socialist” in the boiler room of the Christian right. <br> And you could argue that his presence was the opposite of clever. After all, why was this overachieving underdog of the Democratic Party–the breakout star of a season that was supposed to be all about Hillary–stumping for votes in a place where he had virtually no chance of finding them? Why does a missionary venture out among the heathen? Bernard Sanders, a paint seller’s son from Flatbush, an early-’60s campus radical, a rumpled transplant to progressive Vermont who worked his way gradually up a small ladder in a small state to become the unlikely embodiment of a very large yearning–leads with his heart and his sermons. He seeks conversions, not just votes.",
+      "image": "./images/article-logo-9.png",
       "category": "nightlife"
     },
     {
       "id": 3,
       "title": "Sport is useful?",
-      "shortDescription": "Lorem ipsum dolor",
+      "shortDescription": "Whether it’s a pickup game of basketball or an organized water polo league, playing sports can make you...",
       "createDate": "10.12.2019",
-      "content": "Lorem ipsum dolor",
+      "content": "Whether it’s a pickup game of basketball or an organized water polo league, playing sports can make you healthier and happier because of the physical activity involved. Playing sports contributes to muscle development, coordination, cardiovascular health and numerous other benefits associated with disease prevention; physical activity can help ward of chronic diseases including cardiovascular disease, diabetes, cancer, hypertension, obesity, depression and osteoporosis, according to Sport and Development.org.<br> Playing sports can help children develop healthy bones, stronger cardiovascular systems and powerful lungs, according to Sport and Development.org. Child athletes also develop motor skills and cognitive skills. Being physically active as a child makes it more likely to continue playing sports as an adult, promoting lifelong health, according to the United Nations. Among women, sports can help prevent osteoporosis and hip fractures.<br> Older citizens who play sports have opportunities to keep their bodies moving, feel independent and socialize with others in a healthy way. Playing sports can help people achieve fitness goals related to weight loss, muscle development and fat reduction because of the physical activity involved. Children who play sports are less likely to experience childhood obesity. Physical activity is associated with hormone regulation and strengthening the immune system, according to True Sport.org.",
       "image": "./images/article-logo-3.png",
       "category": "lifestyle"
     },
     {
-      "title": "11",
-      "shortDescription": "",
-      "content": "",
-      "id": 4
+      "id": 4,
+      "title": "Should you refrigerate butter ?",
+      "shortDescription": "Butter is a universal favourite! No wonder the mere addition of butter can simply amp up the taste quotient of delicacy...",
+      "createDate": "10.12.2019",
+      "content": "Butter is a universal favourite! No wonder the mere addition of butter can simply amp up the taste quotient of delicacy. Right from basic toast to cakes to exotic bakes, butter can add soul to any delight. This popular spread also makes for an essential baking ingredient.<br> Despite being an essential part of most delicacies, we often use butter after melting have you ever thought, why do we refrigerate it, when eventually use it in a melted form and does not refrigerating spoil the quality of butter.<br> Read on to know more about it! In India butter holds a special place as it is believed to be Lord krishna’s favourite food, according to the books of mythology. Made by churning milk cream, till the time it attains a thick consistency, The churned out butter fat separated from butter milk and forms butter, which is generally in a solid form. Moreover, the properties of butter are different from other dairy products as it has a very high amount of fat as compared to other dairy based products. It has around 80 percent fat. What's more, due to this high fat content butter has a very thick consistency and refrigerating makes it even harder to use as a spread. Hence, many people store it at room temperature, making it ideal for cooking purposes as well as using as a spread for breads. <br>In fact, the use of salt and no-water makes it resistant to bacterial development as compared to other dairy products. Thus storing at room temperature is the best way to use and preserve better, it doesn't really need refrigeration as it doesn't get spoiled.",
+      "image": "./images/article-logo-11.png",
+      "category": "food"
     },
     {
       "id": 5,
-      "title": "Written in the stars, Million miles away!",
-      "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
-      "createDate": "10.12.2019",
-      "content": "Article1_content",
-      "image": "./images/article-logo-1.png",
-      "category": "nature"
+      "title": "Which one is healthier for the gut: Cooked food or raw food?",
+      "shortDescription": "The cooked versus raw food debate will never cease until there is conclusive evidence to support that either one is more beneficial...",
+      "content": "The cooked versus raw food debate will never cease until there is conclusive evidence to support that either one is more beneficial. Your mother might scold you for having raw food, while a nutritionist might tell you to have raw food. Many implications come with eating both, cooked and raw food, and your gut processes food differently depending on whether it is raw or cooked. <br>In this article we will examine which type of food is better for the gut, but before getting to that, let us look at some of the more general implications. Raw food is eaten in its natural state, so it might contain dangerous microorganisms that are eliminated by cooking. Consuming these microorganisms may lead to food-borne illnesses that lead to symptoms like vomiting, fever, diarrhoea, and abdominal pain. Catching an illness is one of the major concerns of eating raw food. Cooked food on the other hand is safe to consume since most microorganisms cannot survive in high temperatures, thus eliminating the risk of contamination. It is also easier to chew and digest. On the flipside, cooking food is said to destroy water soluble vitamins and enzymes. Vitamins like C and B are easily lost during the process of cooking by as much as 50-60%, while fat soluble vitamins like D, E, and K are unaffected. This leads some to believe that raw food might be richer in nutrients than cooked food. Digestive enzymes help in breaking down food into molecules so that it can be absorbed. Since enzymes are heat sensitive, they get deactivated easily when food is cooked, making it harder for your body to digest.",
+      "image": "./images/article-logo-8.jpg",
+      "category": "food"
     },
     {
       "id": 6,
-      "title": "Written in the stars, Million miles away!",
-      "shortDescription": "A high degree of autonomy is particularly desirable in fields such as space exploration...",
-      "createDate": "10.12.2019",
-      "content": "Article1_content",
-      "image": "./images/article-logo-3.png",
+      "title": "Self-Help Books Are Bad for Your Business",
+      "shortDescription": "The hashtag #wellness has been used on Instagram over 31 million times...",
+      "content": "The hashtag #wellness has been used on Instagram over 31 million times. That’s fewer times than #entrepreneur (57 million) but considerably more than #selfhelp (a mere 2.2 millio Considering they are social media hashtags, these figures shouldn’t be given too much weight, but they are, to a degree, a window into what people are interested in these days. Rather than self-help, which sounds like a treatment for a malady, people want wellness, which is aspirational and holistic. Where self-help instructs you on how to achieve someone else’s idea of betterment, wellness is a process of living more successfully on your terms. Not to downplay the self-improvement industry — self-help literature continues to be an $800 million market that grows about 6 percent annually. And for entrepreneurs, there’s no shortage of new titles on personal optimization. It forces a person to constantly question whether they should dabble in the latest method for becoming smarter, more productive, more creative and so on. But perhaps entrepreneurs should reconsider self-help books and instead focus on wellness.<br> Because, as it turns out, all that self-improvement literature might be doing more harm than good — to you and your business. Much of the advice is misleading, and some of it is just plain wrong. As the CEO of my own company, I make an effort to resist the calls of the latest self-help fads and instead achieve my own version of personal and professional development — or, as I like to call it, “entrepreneurial wellness.”  ",
+      "image": "./images/article-logo-1.png",
+      "category": "lifestyle"
+    },
+    {
+      "id": 7,
+      "title": "The concept of healthy food is very subjective: Ashwani Neeraj",
+      "shortDescription": "Delhi based model, actor and businessman Ashwani Neeraj recently won the title of Mister Grand International 2019 Pageant for Men",
+      "content": "Delhi based model, actor and businessman Ashwani Neeraj recently won the title of Mister Grand International 2019 Pageant for Men. Ahswani has earlier won the title of Rubaru Mr India 2018 and has been known for his healthy eating habits and self-made custom diet plan that helps him balance his external looks and internal immune system as well. In a quick chat with Times Food, the pageant winner talks about his take on healthy food trend, maa ke haath ka khaana and most memorable food memory. When it comes to international pageants, fitness and diet play a key role. What was your food strategy while preparing for the competition? When it comes to international pageants, I had a custom diet plan which was different from any random diet plan. As these beauty pageant requires you to stay fit and look good, I tied to keep a balance of both via carbs and protein. If I had stopped carbohydrates intake, it would have affected my skin and mental well being. Also, I made sure to eat a lot of fibre and leafy vegetables like broccoli, lettuce, carrot, beetroot, spinach. All these helped detoxify my body and made me look leaner.<br> My diet also had a lot of vitamin C for my skin. What healthy food means to you? Healthy food is very subjective and it varies from person to person. For me, it’s not at all about starving; rather it is about keeping a balance of everything. I do have cheat meals and it’s absolutely fine! Your most memorable food memory. Haha! I am sort of guy who prefers street food over a lavish restaurant. I think my memorable food memories are from those days in Delhi when I used to visit Purani Delhi with my pals to relish some really good street food.",
+      "image": "./images/article-logo-7.jpg",
       "category": "food"
     }
   ],

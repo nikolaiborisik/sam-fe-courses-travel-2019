@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,600&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,700&display=swap" rel="stylesheet">  
+    <link rel="shortcut icon" href="../images/favicon-16x16.png" type="image/png">
+    <title>Travelgram</title>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=22ec36c5-352f-428d-a24d-841327c3797c&lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript">
         ymaps.ready(init);
@@ -17,7 +19,6 @@
             });
         }
     </script>  
-    <title>sam-fe-courses-travel-2019</title>
 </head>
 <body>
     <header class="header-container" id='header'>
@@ -29,7 +30,7 @@
             <div class="logo">
                 <img src="./images/logo.png" alt="Logo">
             </div>
-            <button class="btn subscribe-btn">subscribe</button>
+            <button class="btn subscribe-btn"><a href="#contact-anchor">subscribe</a></button>
 
         </div>
         <div class="header-nav">
@@ -38,19 +39,19 @@
             <input class="toggle-socials-links-input" type='checkbox' id="socials-links-toggle-input">
             <label class="btn toggle-socials-links-label" for='socials-links-toggle-input'><i class="fas fa-bars"></i></label>
             <ul class="list nav-list">
-                <li><button class="btn nav-btn">home</button></li>
-                <li><button class="btn nav-btn">featured</button></li>
-                <li><button class="btn nav-btn">BLOGS</button></li>
-                <li><button class="btn nav-btn">GALLERY</button></li>
-                <li><button class="btn nav-btn">categories</button></li>
-                <li><button class="btn nav-btn">contact</button></li>
+                <li><button class="btn nav-btn"><a href="#header">home</a></button></li>
+                <li><button class="btn nav-btn"><a href="#articles-anchor">featured</a></button></li>
+                <li><button class="btn nav-btn"><a href="#articles-anchor">BLOGS</a></button></li>
+                <li><button class="btn nav-btn"><a href="#gallery-anchor">GALLERY</a></button></li>
+                <li><button class="btn nav-btn"><a href="#categories-anchor">categories</a></button></li>
+                <li><button class="btn nav-btn"><a href="#contact-anchor">contact</a></button></li>
             </ul>
             <ul class="list nav-socials-links-list">
-                <li><button class="btn social-btn"><i class="fab fa-facebook-f"></i></button></li>
-                <li><button class="btn social-btn"><i class="fab fa-twitter"></i></button></li>
-                <li><button class="btn social-btn"><i class="fab fa-google-plus-g"></i></button></li>
-                <li><button class="btn social-btn"><i class="fab fa-instagram"></i></button></li>
-                <li><button class="btn social-btn"><i class="fab fa-youtube"></i></button></li>
+                <li><a href="https://www.facebook.com/" target=_blank title="facebook"><button class="btn social-btn"><i class="fab fa-facebook-f"></i></button></a></li>
+                <li><a href="https://www.twitter.com/" target=_blank title="twitter"><button class="btn social-btn"><i class="fab fa-twitter"></i></button></a></li>
+                <li><a href="https://support.google.com/plus/" target=_blank title="google+"><button class="btn social-btn"><i class="fab fa-google-plus-g"></i></button></a></li>
+                <li><a href="https://www.instagram.com/" target=_blank title="instagram"><button class="btn social-btn"><i class="fab fa-instagram"></i></button></a></li>
+                <li><a href="https://www.youtube.com/" target=_blank title="youtube"><button class="btn social-btn"><i class="fab fa-youtube"></i></button></a></li>
             </ul>
         </div>
     </header>
@@ -70,11 +71,11 @@
                 </div>
                 <button class="btn follow-me-btn">Follow me</button>
                 <ul class="list socials-list">
-                    <li><button class="btn social-btn aside__social-btn"><i class="fab fa-facebook-f"></i></button></li>
-                    <li><button class="btn social-btn aside__social-btn"><i class="fab fa-twitter"></i></button></li>
-                    <li><button class="btn social-btn aside__social-btn"><i class="fab fa-google-plus-g"></i></button></li>
-                    <li><button class="btn social-btn aside__social-btn"><i class="fab fa-instagram"></i></button></li>
-                    <li><button class="btn social-btn aside__social-btn"><i class="fab fa-youtube"></i></button></li>
+                    <li><a href="https://www.facebook.com/" target=_blank title="facebook"><button class="btn social-btn aside__social-btn"><i class="fab fa-facebook-f"></i></button></a></li>
+                    <li><a href="https://www.twitter.com/" target=_blank title="twitter"><button class="btn social-btn aside__social-btn"><i class="fab fa-twitter"></i></button></a></li>
+                    <li><a href="https://support.google.com/plus/" target=_blank title="google+"><button class="btn social-btn aside__social-btn"><i class="fab fa-google-plus-g"></i></button></a></li>
+                    <li><a href="https://www.instagram.com/" target=_blank title="instagram"><button class="btn social-btn aside__social-btn"><i class="fab fa-instagram"></i></button></a></li>
+                    <li><a href="https://www.youtube.com/" target=_blank title="youtube"><button class="btn social-btn aside__social-btn"><i class="fab fa-youtube"></i></button></a></li>
                 </ul>
             </div>
             <div class='main-left-box left-div_shadow register-box'>
@@ -84,7 +85,7 @@
                     <div class="input-div"><button class="btn btn-register">SING UP</button></div>
                 </form>
             </div>
-            <div class='main-left-box left-div_shadow'>
+            <div class='main-left-box left-div_shadow' id="categories-anchor">
                 <h2 class="aside-title">CATEGORIES</h2>
                 <form id="categoryForm" class='categoryForm'>
                     <ul class="categories">
@@ -121,17 +122,11 @@
                         <div class="input-div">
                             <input class="btn add-btn" id="getArticle" type="button" value="Send">
                         </div>
-<!--                        <div class="input-div">-->
-<!--                            <input class="add-input toDelete" type="text" placeholder="Enter the id of the item to be deleted">-->
-<!--                        </div>-->
-<!--                        <div class="input-div">-->
-<!--                            <input class="btn add-btn" id="removeArticle" type="button" value="Remove">-->
-<!--                        </div>-->
                     </div>
                 </form>
             </div>
         </section>
-        <section class="articles">
+        <section class="articles" id="articles-anchor">
             <div class="cards-container">
             </div>
             <nav class="pagination">
@@ -142,7 +137,7 @@
             </nav>
         </section>
     </main>
-    <section class="gallery">
+    <section class="gallery" id="gallery-anchor">
         <div class="item">
             <img src="./images/gallery-1.png" alt="">
         </div>
@@ -169,15 +164,15 @@
         </div>
     </section>
     <footer class="footer">
-        <section class="connected">
+        <section class="connected" id="contact-anchor">
             <ul class="list socials-list">
-                <li><button class="btn social-btn"><i class="fab fa-facebook-f"></i> facebook</button></li>
-                <li><button class="btn social-btn"><i class="fab fa-twitter"></i> twitter</button></li>
-                <li><button class="btn social-btn"><i class="fab fa-google-plus-g"></i> google +</button></li>
-                <li><button class="btn social-btn"><i class="fab fa-linkedin"></i> linkedin</button></li>
-                <li><button class="btn social-btn"><i class="fab fa-instagram"></i> instagram</button></li>
-                <li><button class="btn social-btn"><i class="fab fa-vimeo"></i> vineo</button></li>
-                <li><button class="btn social-btn"><i class="fab fa-youtube"></i> youtube</button></li>
+                <li><a href="https://www.facebook.com/" target=_blank title="facebook"><button class="btn social-btn"><i class="fab fa-facebook-f"></i> facebook</button></li>
+                <li><a href="https://www.twitter.com/" target=_blank title="twitter"><button class="btn social-btn"><i class="fab fa-twitter"></i> twitter</button></li>
+                <li><a href="https://support.google.com/plus/" target=_blank title="google+"><button class="btn social-btn"><i class="fab fa-google-plus-g"></i> google +</button></li>
+                <li><a href="https://www.linkedin.com/" target=_blank title="linkdin"><button class="btn social-btn"><i class="fab fa-linkedin"></i> linkedin</button></li>
+                <li><a href="https://www.instagram.com/" target=_blank title="instagram"><button class="btn social-btn"><i class="fab fa-instagram"></i> instagram</button></li>
+                <li><a href="https://www.vimeo.com/" target=_blank title="vimeo"><button class="btn social-btn"><i class="fab fa-vimeo"></i> vineo</button></li>
+                <li><a href="https://www.youtube.com/" target=_blank title="youtube"><button class="btn social-btn"><i class="fab fa-youtube"></i> youtube</button></li>
             </ul>
         </section>
         <section class="back-to-top">
@@ -188,12 +183,12 @@
                 <input class="toggle-nav-list-input" type='checkbox' id="toggle-list-input">
                 <label class="toggle-nav-list-label" for='toggle-list-input'><i class="fas fa-bars"></i></label>
                 <ul class="list nav-list footer__nav-list">
-                    <li><button class="btn nav-btn footer-nav-btn">home</button></li>
-                    <li><button class="btn nav-btn footer-nav-btn">featured</button></li>
-                    <li><button class="btn nav-btn footer-nav-btn">BLOGS</button></li>
-                    <li><button class="btn nav-btn footer-nav-btn">GALLERY</button></li>
-                    <li><button class="btn nav-btn footer-nav-btn">categories</button></li>
-                    <li><button class="btn nav-btn footer-nav-btn">contact</button></li>
+                    <li><button class="btn nav-btn footer-nav-btn"><a href="#header">home</a></button></li>
+                    <li><button class="btn nav-btn footer-nav-btn"><a href="#articles-anchor">featured</a></button></li>
+                    <li><button class="btn nav-btn footer-nav-btn"><a href="#articles-anchor">BLOGS</a></button></li>
+                    <li><button class="btn nav-btn footer-nav-btn"><a href="#gallery-anchor">GALLERY</a></button></li>
+                    <li><button class="btn nav-btn footer-nav-btn"><a href="#categories-anchor">categories</a></button></li>
+                    <li><button class="btn nav-btn footer-nav-btn"><a href="#contact-anchor">contact</a></button></li>
                 </ul>
             </nav>
             <a class="btn back-to-top-btn" href='#header'><i class="fas fa-arrow-up"></i></a>

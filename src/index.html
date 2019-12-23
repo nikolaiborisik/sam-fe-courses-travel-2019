@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,600&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,700&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=22ec36c5-352f-428d-a24d-841327c3797c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [53.89, 27.59],
+                zoom: 7
+            });
+        }
+    </script>  
     <title>sam-fe-courses-travel-2019</title>
 </head>
 <body>
@@ -19,14 +29,14 @@
             <div class="logo">
                 <img src="./images/logo.png" alt="Logo">
             </div>
-            <button class="btn subscribe-btn" id="but">subscribe</button>
+            <button class="btn subscribe-btn">subscribe</button>
 
         </div>
         <div class="header-nav">
             <input class="toggle-main-menu-input" type='checkbox' id="toggle-main-menu-input">
-            <label class="toggle-main-menu-label" for='toggle-main-menu-input'><i class="fas fa-bars"></i></label>
+            <label class="btn toggle-main-menu-label" for='toggle-main-menu-input'><i class="fas fa-bars"></i></label>
             <input class="toggle-socials-links-input" type='checkbox' id="socials-links-toggle-input">
-            <label class="toggle-socials-links-label" for='socials-links-toggle-input'><i class="fas fa-bars"></i></label>
+            <label class="btn toggle-socials-links-label" for='socials-links-toggle-input'><i class="fas fa-bars"></i></label>
             <ul class="list nav-list">
                 <li><button class="btn nav-btn">home</button></li>
                 <li><button class="btn nav-btn">featured</button></li>
@@ -48,8 +58,8 @@
         <section class="main-aside">
             <div class='main-left-box left-div_shadow map-box'>
                 <h2 class="aside-title">WHERE AM I</h2>
-                <div class="map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A325168d8cec11152ac3bded6312747bb05c2907ee3fff745726d243418d40156&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                <div class="map" id='map'>
+                    
                 </div>
             </div>
             <div class='main-left-box left-div_shadow about-box'>

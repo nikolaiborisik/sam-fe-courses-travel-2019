@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:400,700&display=swap" rel="stylesheet">  
     <link rel="shortcut icon" href="../images/favicon-16x16.png" type="image/png">
     <title>Travelgram</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=22ec36c5-352f-428d-a24d-841327c3797c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [53.89, 27.59],
+                zoom: 7
+            });
+        }
+    </script>  
 </head>
 <body>
     <header class="header-container" id='header'>
@@ -25,9 +35,9 @@
         </div>
         <div class="header-nav">
             <input class="toggle-main-menu-input" type='checkbox' id="toggle-main-menu-input">
-            <label class="toggle-main-menu-label" for='toggle-main-menu-input'><i class="fas fa-bars"></i></label>
+            <label class="btn toggle-main-menu-label" for='toggle-main-menu-input'><i class="fas fa-bars"></i></label>
             <input class="toggle-socials-links-input" type='checkbox' id="socials-links-toggle-input">
-            <label class="toggle-socials-links-label" for='socials-links-toggle-input'><i class="fas fa-bars"></i></label>
+            <label class="btn toggle-socials-links-label" for='socials-links-toggle-input'><i class="fas fa-bars"></i></label>
             <ul class="list nav-list">
                 <li><button class="btn nav-btn"><a href="#header">home</a></button></li>
                 <li><button class="btn nav-btn"><a href="#articles-anchor">featured</a></button></li>
@@ -49,8 +59,8 @@
         <section class="main-aside">
             <div class='main-left-box left-div_shadow map-box'>
                 <h2 class="aside-title">WHERE AM I</h2>
-                <div class="map">
-                   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A325168d8cec11152ac3bded6312747bb05c2907ee3fff745726d243418d40156&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> 
+                <div class="map" id='map'>
+                    
                 </div>
             </div>
             <div class='main-left-box left-div_shadow about-box'>
@@ -98,16 +108,19 @@
                             <input class="add-input article-shortDescription" type="text" placeholder="Short description">
                         </div>
                         <div class="input-div">
+                            <select class="add-input article-category">
+                                <option value="0" disabled selected>Choose category</option>
+                                <option value="nature">nature</option>
+                                <option value="nightlife">nightlife</option>
+                                <option value="lifestyle">lifestyle</option>
+                                <option value="food">food</option>
+                            </select>
+                        </div>
+                        <div class="input-div">
                             <textarea class="add-input article-content" rows="7"></textarea>
                         </div>
                         <div class="input-div">
                             <input class="btn add-btn" id="getArticle" type="button" value="Send">
-                        </div>
-                        <div class="input-div">
-                            <input class="add-input toDelete" type="text" placeholder="Enter the id of the item to be deleted">
-                        </div>
-                        <div class="input-div">
-                            <input class="btn add-btn" id="removeArticle" type="button" value="Remove">
                         </div>
                     </div>
                 </form>

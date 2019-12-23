@@ -4,6 +4,6 @@ export interface ArticleModel {
     shortDescription: string,
     createDate?: string,
     content: string,
+    category?: string,
     image?: string,
-    name?: string
 }

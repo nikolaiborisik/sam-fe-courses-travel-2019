@@ -74,5 +74,40 @@
     {
       "name": "food"
     }
+  ],
+  "tags": [
+    {
+      "name": "nature"
+    },
+    {
+      "name": "travel"
+    },
+    {
+      "name": "lifestyle"
+    },
+    {
+      "name": "lost"
+    },
+    {
+      "name": "trekking"
+    }
+  ],
+  "articleTags": [
+    {
+      "articleId": 1,
+      "tag": "nature"
+    },
+    {
+      "articleId": 2,
+      "tag": "nightlife"
+    },
+    {
+      "articleId": 3,
+      "tag": "nightlife"
+    },
+    {
+      "articleId": 4,
+      "tag": "nightlife"
+    }
   ]
 }
